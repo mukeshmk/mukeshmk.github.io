@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mukesh Arambakam - Senior Machine Learning Engineer specializing in NLP, Neural Machine Translation, and Generative AI">
+    <meta name="keywords" content="Machine Learning, NLP, AI, Data Science, Software Engineer, Portfolio">
+    <meta name="author" content="Mukesh Arambakam">
+    <title>Mukesh Arambakam - ML Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <h2>Mukesh Arambakam</h2>
+                </div>
+                <div class="navbar-menu">
+                    <button class="nav-link active" onclick="showSection('home')">Home</button>
+                    <button class="nav-link" onclick="showSection('cv')">CV</button>
+                    <button class="nav-link" onclick="showSection('blog')">Blog</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Senior Machine Learning Engineer</h1>
+                        <p class="hero-subtitle">Specializing in Natural Language Processing, Neural Machine Translation, and Generative AI</p>
+                        <p class="hero-description">A Senior Machine Learning Engineer with expertise in Natural Language Processing, Neural Machine Translation, and Generative AI, holding a Master's Degree in Data Science. Proficient in end-to-end ML pipeline development, from data preprocessing and model training to deployment and evaluation.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn--primary" onclick="showSection('cv')">View Full CV</button>
+                            <button class="btn btn--outline" onclick="scrollToContact()">Contact Me</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-placeholder">
+                            <div class="profile-icon">👨‍💻</div>
+                            <p>Professional Photo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:amukesh.mk@gmail.com">amukesh.mk@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:+35389496045">(+353) 89-4960-450</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📍 Location</h3>
+                        <p>Dublin, Ireland</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <div class="container">
+                <h2>Key Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>ML & AI Libraries</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">transformers</span>
+                            <span class="skill-tag">BERT</span>
+                            <span class="skill-tag">scikit-learn</span>
+                            <span class="skill-tag">spaCy</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>LLM Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">LangGraph</span>
+                            <span class="skill-tag">LoRA</span>
+                            <span class="skill-tag">QLoRA</span>
+                            <span class="skill-tag">PEFT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Highlights -->
+        <div class="experience-highlights">
+            <div class="container">
+                <h2>Experience Highlights</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <h3>Language Detection Expansion</h3>
+                        <p>Expanded language detection coverage from 45 to 192 languages, implementing hierarchical architectures for closely related language pairs.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>LLM Framework Development</h3>
+                        <p>Built internal LangChain-like framework for LLM deployment with RAG systems and vector databases integration.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Performance Optimization</h3>
+                        <p>Optimized filter framework performance by 30% and improved search framework performance by 20% at Oracle Corporation.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>Leadership & Mentoring</h3>
+                        <p>Led cross-functional teams and mentored 10 junior team members while coordinating with multiple global teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="section">
+        <div class="container">
+            <div class="cv-header">
+                <h1>Curriculum Vitae</h1>
+                <button class="btn btn--outline download-btn" onclick="handleDownloadCV()">📄 Download PDF</button>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="cv-section">
+                <h2>Professional Experience</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Senior Machine Learning Engineer (IC-3)</h3>
+                            <span class="duration">Nov. 2020 - Current</span>
+                        </div>
+                        <p class="company">Oracle Corporation</p>
+                        <ul class="achievements">
+                            <li>Expanded language detection coverage from 45 to 192 languages</li>
+                            <li>Developed hierarchical language detection architecture for closely related language pairs</li>
+                            <li>Built internal LangChain-like framework for LLM deployment</li>
+                            <li>Implemented RAG systems with vector databases</li>
+                            <li>Fine-tuned LLMs using PEFT techniques including LoRA and QLoRA</li>
+                            <li>Created comprehensive Dataset Analysis Tool</li>
+                            <li>Integrated G-Eval and LLM-as-a-Judge frameworks</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Applications Engineer (IC-2)</h3>
+                            <span class="duration">June 2019 - Aug. 2019</span>
+                        </div>
+                        <p class="company">Oracle Corporation</p>
+                        <ul class="achievements">
+                            <li>Coordinated with multiple global teams for cross-platform application development</li>
+                            <li>Lead developer in overhauling project security flow</li>
+                            <li>Implemented micro-service for Multi-Tenant Architecture</li>
+                            <li>Mentored 10 junior team members</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Applications Developer (IC-1)</h3>
+                            <span class="duration">July 2017 - May 2019</span>
+                        </div>
+                        <p class="company">Oracle Corporation</p>
+                        <ul class="achievements">
+                            <li>Certificate of Appreciation for outstanding contribution</li>
+                            <li>Optimized filter framework performance by 30%</li>
+                            <li>Improved search framework performance by 20%</li>
+                            <li>Developed 3 core product features</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="cv-section">
+                <h2>Education</h2>
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>M.Sc. in Data Science</h3>
+                            <span class="duration">2019 - 2020</span>
+                        </div>
+                        <p class="institution">Trinity College of Dublin</p>
+                        <p class="grade">Grade: 1:1</p>
+                        <p class="thesis">Thesis: "Federated Meta-Learning: A Novel Approach for Algorithm Selection"</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h3>B.Tech. in Computer Science and Engineering</h3>
+                            <span class="duration">2013 - 2017</span>
+                        </div>
+                        <p class="institution">Amrita School of Engineering</p>
+                        <p class="grade">CGPA: 8.37/10.0</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="cv-section">
+                <h2>Technical Skills</h2>
+                <div class="skills-detailed">
+                    <div class="skill-category-detailed">
+                        <h3>Programming Languages</h3>
+                        <p>Python, Java, R, JavaScript, C++, SQL, PL/SQL, Bash</p>
+                    </div>
+                    <div class="skill-category-detailed">
+                        <h3>ML & AI Libraries</h3>
+                        <p>PyTorch, NLTK, spaCy, transformers, OpenNMT, scikit-learn, TensorFlow, Keras, fasttext, BERT, RoBERTa</p>
+                    </div>
+                    <div class="skill-category-detailed">
+                        <h3>LLM Technologies</h3>
+                        <p>RAG, LangChain, LangGraph, Agentic AI, MCP, Tool Calling, Prompt Engineering, LoRA, QLoRA, PEFT</p>
+                    </div>
+                    <div class="skill-category-detailed">
+                        <h3>Infrastructure & Tools</h3>
+                        <p>Docker, Docker Compose, Jenkins, git, JIRA, FastAPI, Flask, Microservices</p>
+                    </div>
+                    <div class="skill-category-detailed">
+                        <h3>Other Technologies</h3>
+                        <p>NumPy, Pandas, ElasticSearch, Vector Databases, ONNX, Oracle DB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="cv-section">
+                <h2>Key Projects</h2>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <h3>Home Lab Infrastructure</h3>
+                        <p>Built complex home lab environment using Proxmox virtualization platform with Docker LXCs, self-hosting comprehensive services including Home Assistant, Nextcloud, Immich, Jellyfin with enterprise-grade authentication using Authelia SSO.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Image and Audio Captcha Solver</h3>
+                        <p>Parallelized captcha generator and solver with 93% accuracy built using TensorFlow's CNN model.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Connect 4 AI</h3>
+                        <p>Multi-agent implementation of Connect-4 using MCTS, Minimax and Expectimax algorithms.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications -->
+            <div class="cv-section">
+                <h2>Publications</h2>
+                <div class="publication-item">
+                    <h3>"Federated Meta-Learning: Democratizing Algorithm Selection Across Disciplines and Software Libraries"</h3>
+                    <p>7th ICML Workshop on Automated Machine Learning (AutoML), Jun 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="blog-header">
+                <h1>Blog Posts</h1>
+                <p>Insights and tutorials on Machine Learning, AI, and Software Development</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Building Scalable LLM Systems with RAG</h3>
+                        <p class="blog-date">Coming Soon</p>
+                        <p class="blog-summary">Exploring the implementation of Retrieval-Augmented Generation systems for production environments.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">LLM</span>
+                            <span class="blog-tag">RAG</span>
+                            <span class="blog-tag">Production</span>
+                        </div>
+                        <button class="btn btn--outline" onclick="showComingSoonMessage()">Coming Soon</button>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Fine-tuning LLMs with LoRA and QLoRA</h3>
+                        <p class="blog-date">Coming Soon</p>
+                        <p class="blog-summary">A comprehensive guide to parameter-efficient fine-tuning techniques for large language models.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">LoRA</span>
+                            <span class="blog-tag">QLoRA</span>
+                            <span class="blog-tag">Fine-tuning</span>
+                        </div>
+                        <button class="btn btn--outline" onclick="showComingSoonMessage()">Coming Soon</button>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Building Agentic AI Systems</h3>
+                        <p class="blog-date">Coming Soon</p>
+                        <p class="blog-summary">Designing and implementing AI agents with tool-calling capabilities using LangGraph.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">AI Agents</span>
+                            <span class="blog-tag">LangGraph</span>
+                            <span class="blog-tag">Tool Calling</span>
+                        </div>
+                        <button class="btn btn--outline" onclick="showComingSoonMessage()">Coming Soon</button>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <h3>Home Lab Setup with Proxmox and Docker</h3>
+                        <p class="blog-date">Coming Soon</p>
+                        <p class="blog-summary">Complete guide to setting up a home lab infrastructure with enterprise-grade features.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Infrastructure</span>
+                            <span class="blog-tag">Proxmox</span>
+                            <span class="blog-tag">Docker</span>
+                        </div>
+                        <button class="btn btn--outline" onclick="showComingSoonMessage()">Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-cta">
+                <h3>More Posts Coming Soon!</h3>
+                <p>I regularly write about Machine Learning, AI, and Software Development. Check back soon for new content.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>📧 <a href="mailto:amukesh.mk@gmail.com">amukesh.mk@gmail.com</a></p>
+                    <p>📞 <a href="tel:+353894960450">(+353) 89-4960-450</a></p>
+                    <p>📍 Dublin, Ireland</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Professional Links</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mukeshmk95/" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://github.com/mukeshmk" target="_blank" class="social-link">GitHub</a>
+                        <a href="http://mukeshmk.github.io/" target="_blank" class="social-link">Portfolio</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <button class="footer-link" onclick="showSection('home')">Home</button>
+                    <button class="footer-link" onclick="showSection('cv')">CV</button>
+                    <button class="footer-link" onclick="showSection('blog')">Blog</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mukesh Arambakam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
