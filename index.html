@@ -1,849 +1,1068 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="image" property="og:image" content="https://mukeshmk.github.io/assets/img/thumbnail.png">
-    <meta name="author" content="Mukesh Arambakam" />
-    <meta name="title" property="og:title" content="Mukesh Arambakam - Online Portfolio" />
-    <meta name="description" property="og:description" 
-        content="A Post Graduate from Trinity College of Dublin, with a Master's Degree in Data Science 
-        and 2+ years of work experience"
-        />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senior Machine Learning Engineer with with 7+ years of Software Development experience, including 5 years specializing in Natural Language Processing, Neural Machine Translation, and Generative AI in Dublin, Ireland.">
+    <meta name="keywords" content="machine learning engineer, natural language processing, neural machine translation, generative ai, agentic ai, llms, python developer, senior software developer, ML engineer Dublin, AI engineer, software architect, technical blog, ML tutorials, homelab, docker, langchain">
+    <meta name="author" content="Mukesh Arambakam">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="EN">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mukeshmk.github.io/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mukesh Arambakam - Senior Machine Learning Engineer & Software Developer">
+    <meta property="og:description" content="Senior Machine Learning Engineer with with 7+ years of Software Development experience, including 5 years specializing in Natural Language Processing, Neural Machine Translation, and Generative AI in Dublin, Ireland.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mukeshmk.github.io/">
+    <meta property="og:image" content="https://mukeshmk.github.io/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mukesh Arambakam - Senior Machine Learning Engineer and Software Developer Portfolio">
+    <meta property="og:site_name" content="Mukesh Arambakam Portfolio">
+    <meta property="og:locale" content="en_US">
 
-    <title>Mukesh Arambakam</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <link href="assets/css/morestyle.css" rel="stylesheet" />
+    <!-- Twitter Card Meta Tags -->
+<!--
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mukesh Arambakam - Senior Machine Learning Engineer and Software Developer">
+    <meta name="twitter:description" content="Senior Machine Learning Engineer with with 7+ years of Software Development experience, including 5 years specializing in Natural Language Processing, Neural Machine Translation, and Generative AI in Dublin, Ireland.">
+    <meta name="twitter:image" content="https://mukeshmk.github.io/assets/og-image.jpg">
+    <meta name="twitter:image:alt" content="Mukesh Arambakam - Senior Machine Learning Engineer and Software Developer Portfolio">
+    <meta name="twitter:creator" content="@yourusername">
+    <meta name="twitter:site" content="@yourusername">
+-->
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="IE-D">
+    <meta name="geo.placename" content="Dublin">
+    <meta name="geo.position" content="53.349805;-6.26031">
+    <meta name="ICBM" content="53.349805, -6.26031">
+    
+    <!-- Hreflang for multilingual support (if applicable) -->
+    <link rel="alternate" hreflang="en" href="https://mukeshmk.github.io/">
+    
+    <title>Mukesh Arambakam - Senior Machine Learning Engineer & Software Developer</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Structured Data - Person Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mukesh Arambakam",
+        "jobTitle": "Senior Machine Learning Engineer and Software Developer",
+        "description": "Senior Software Developer specializing in Machine Learning, NLP, and Neural Machine Translation with 5+ years experience building scalable ML systems.",
+        "url": "https://mukeshmk.github.io/",
+        "image": "https://mukeshmk.github.io/assets/profile-photo.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/mukeshmk95",
+            "https://github.com/mukeshmk",
+            "https://x.com/amukeshmk"
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Oracle Corporation",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dublin",
+                "addressCountry": "Ireland"
+            }
+        },
+        "knowsAbout": [
+            "Machine Learning",
+            "Natural Language Processing", 
+            "Neural Machine Translation",
+            "Generative AI",
+            "Agentic AI",
+            "Model Context Protocol",
+            "LLMs",
+            "Python",
+            "TensorFlow",
+            "PyTorch",
+            "Docker",
+            "Software Architecture"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Trinity College of Dublin"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dublin",
+            "addressCountry": "Ireland"
+        }
+    }
+    </script>
+    
+    <!-- Structured Data - Website Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Mukesh Arambakam - Senior Machine Learning Engineer and Software Developer",
+        "description": "Portfolio website showcasing machine learning projects, technical blog posts, and professional experience in software development and AI.",
+        "url": "https://mukeshmk.github.io/",
+        "author": {
+            "@type": "Person",
+            "name": "Mukesh Arambakam"
+        },
+        "inLanguage": "en-US",
+        "copyrightYear": "2025",
+        "copyrightHolder": {
+            "@type": "Person",
+            "name": "Mukesh Arambakam"
+        }
+    }
+    </script>
+    
+    <!-- Structured Data - Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Mukesh Arambakam - ML Engineering Services",
+        "description": "Professional machine learning engineering and software development services specializing in NLP and neural machine translation.",
+        "url": "https://mukeshmk.github.io/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dublin",
+            "addressCountry": "Ireland"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Mukesh Arambakam"
+        },
+        "serviceType": ["Machine Learning Engineering", "Software Development", "Natural Language Processing", "Technical Consulting"]
+    }
+    </script>
 </head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Mukesh Arambakam</span>
-            <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Mukesh Arambakam Image" />
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-user-tie"></i> About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-user-cog"></i> Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education"><i class="fa fa-university"></i> Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#publication"><i class="fa fa-file-signature"></i> Publication</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-brain"></i> Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio"><i class="fa fa-project-diagram"></i> Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#interests"><i class="fa fa-skiing-nordic"></i> Interests</a>
-                </li>
-                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>-->
-            </ul>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="sr-only sr-only-focusable btn btn-primary">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home" aria-label="Mukesh Arambakam - Go to homepage">Mukesh Arambakam</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a class="nav-link active" href="#home" data-section="home" role="menuitem" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#cv" data-section="cv" role="menuitem">CV</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#projects" data-section="projects" role="menuitem">Projects</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#blog" data-section="blog" role="menuitem">Blog</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a class="nav-link" href="#contact" data-section="contact" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Theme Toggle -->
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="themeToggle" aria-label="Toggle dark/light theme">
+                    <label class="form-check-label" for="themeToggle" aria-hidden="true">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </label>
+                </div>
+            </div>
         </div>
     </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
 
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0"><span class="text-primary">Mukesh</span> Arambakam</h1>
-                <div class="subheading mb-5">
-                    Dublin · Ireland · (+353) 89 4960 450 · 
-                    <a href="mailto:amukesh.mk@gmail.com">amukesh.mk@gmail.com</a>
-                </div>
-                <p class="lead mb-5">
-                    A Senior Machine Learning Engineer, currently working with Natural Language Processing 
-                    and Neural Machine Translation, who is also a Graduate with a Master’s Degree in Data Science. 
-                    I am proficient in Machine Learning, Natural Language Processing, Machine Translation, Data Analytics, 
-                    Statistical Modelling, Deep Learning, and Artificial Intelligence . I also have 2 years of 
-                    work experience as an Application Engineer, who is skilled at design, development and testing of 
-                    cross-platform applications.
-                </p>
-                <!--
-                    <p>You can download my resume or read it online from here:</p>
-                    <a target="_blank" href="assets/Mukesh_Arambakam_Resume.pdf">
-                        <button class="btn btn-dark"><i class="fa fa-book"></i> Online</button>
-                    </a>
-                    <a target="_blank" href="assets/Mukesh_Arambakam_Resume.pdf" download>
-                        <button class="btn btn-dark"><i class="fa fa-download"></i> Download</button>
-                    </a>
-                    <br><br><br>
-                 -->
-                <div class="social-icons">
-                    <a class="social-icon" target="_blank" href="assets/Mukesh_Arambakam_Resume.pdf">
-                        <i class="fas fa-file-pdf"></i>
-                    </a>
-                    <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/mukeshmk95/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="social-icon" target="_blank" href="https://github.com/mukeshmk">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="social-icon" target="_blank" href="https://twitter.com/amukeshmk">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <!--
-                        <a class="social-icon" target="_blank" href="https://stackoverflow.com/users/4014678/mukesh-a">
-                            <i class="fab fa-stack-overflow"></i>
-                        </a>
-                        <a class="social-icon" target="_blank" href="https://www.instagram.com/mukeshmk95/">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    -->
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active" aria-labelledby="home-heading">
+            <div class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center min-vh-100">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h1 id="home-heading" class="display-4 fw-bold mb-3">Mukesh Arambakam</h1>
+                            <h2 class="h3 text-muted mb-4">Senior Machine Learning Engineer and Software Developer</h2>
+                            <p class="lead mb-4">with with 7+ years of Software Development experience, including 5 years specializing in Natural Language Processing, Neural Machine Translation, and Generative AI, backed by a Master's in Data Science.</p>
+                            
+                            <div class="d-flex justify-content-center gap-3 mb-5">
+                                <a href="#contact" class="btn btn-primary btn-lg" data-section="contact" aria-describedby="contact-description">
+                                    <i class="fas fa-envelope me-2" aria-hidden="true"></i>Get In Touch
+                                </a>
+                                <span id="contact-description" class="sr-only">Navigate to contact information and social media links</span>
+                                <a href="#cv" class="btn btn-outline-primary btn-lg" data-section="cv" aria-describedby="cv-description">
+                                    <i class="fas fa-file-alt me-2" aria-hidden="true"></i>View CV
+                                </a>
+                                <span id="cv-description" class="sr-only">View detailed curriculum vitae and professional experience</span>
+                            </div>
 
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Experience</h2>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Senior Machine Learning Engineer (IC3)</h3>
-                        <div class="subheading mb-3">Oracle Corporation</div>
-                        <p>
-                        <ul>
-                            <li>
-                                Involved in the Research and Development of techniques used in Dataset Analysis, 
-                                Data Cleaning and Engine Evaluation
-                            </li>
-                            <li>
-                                Responsible for various stages of development in the NMT Pipeline: Data Cleaning, Model Training and Evaluation
-                            </li>
-                            <li>
-                                Improved the creation of user-generated data for Model fine tuning post training
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Nov. 2020 - Current</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Data Scientist Intern</h3>
-                        <div class="subheading mb-3">AugRay Private, Ltd.</div>
-                        <p>
-                        <ul>
-                            <li>
-                                Part of a global team of 6, where we materialised an Augmented Reality based application.
-                            </li>
-                            <li>
-                                Refined the image and video preprocessing procedure for the application.
-                            </li>
-                            <li>
-                                Part of the Research and Development team instrumental in shaping the Convolutional Neural Network.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July. 2020 - Oct. 2020</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Applications Engineer (IC-2)</h3>
-                        <div class="subheading mb-3">Oracle Corporation</div>
-                        <p>
-                        <ul>
-                            <li>
-                                Coordinated with multiple global teams, business analysts and stake-holders to develop a cross-platform application
-                            </li>
-                            <li>
-                                Lead developer in overhauling the project security flow of the Product and introduced 2 new features.
-                            </li>
-                            <li>
-                                Implemented a micro-service which communicates between tenants in a Multi-Tenant Architecture.
-                            </li>
-                            <li>
-                                Mentored 10 junior team members, provided insights about the product’s internal working and underlying tools.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">June. 2019 - Aug. 2019</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Applications Developer (IC-1)</h3>
-                        <div class="subheading mb-3">Oracle Corporation</div>
-                        <p>
-                        <ul>
-                            <li>
-                                <b>Certificate of Appreciation:</b> For outstanding contribution to Prime Projects
-                                Product Development.
-                            </li>
-                            <li>
-                                Assumed a pivotal role in the development of 3 core features of the product 
-                                along with my team members.
-                            </li>
-                            <li>
-                                Optimized the performance of an internal module's filter framework with the use of 
-                                dynamic SQL queries by 30\%.
-                            </li>
-                            <li>
-                                Improved the performance of search framework by 20\%, using query optimization techniques.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July. 2017 - May. 2019</span></div>
-                </div>
-
-                <!--
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Graduate Intern</h3>
-                        <div class="subheading mb-3">Oracle India Private, Ltd.</div>
-                        <p>
-                        <ul>
-                            <li>
-                                Worked as a Selenium Automation Engineer, automating over a 100 test cases.
-                            </li>
-                            <li>
-                                Maintained high product quality standards while working as a Quality Assurance Engineer.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Jan. 2017 - June. 2017</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Student Intern</h3>
-                        <div class="subheading mb-3">Cisco Systems Private, Ltd.</div>
-                        <p>
-                        <ul>
-                            <li>
-                                Worked on Platform Transformation for an internal Product: Cordys Process System.
-                            </li>
-                            <li>
-                                Designed the UX, Architecture and Schema Design for the application.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Oct. 2016 - Mar. 2017</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Student Intern</h3>
-                        <div class="subheading mb-3">Hitachi Solutions, Ltd.</div>
-                        <p>
-                        <ul>
-                            <li>
-                                Created a web application with an authentication system.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">July. 2016 - July. 2016</span></div>
-                </div>
-                -->
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Trinity College of Dublin</h3>
-                        <div class="subheading mb-3">M.Sc. in Data Science</div>
-                        <div><b>Relevant Course Work:</b> Machine Learning, Data Analytics, Artificial Intelligence,
-                            Optimisation Algorithms for Data Analysis, Knowledge and Data Engineering, Text Analysis,
-                            Applied Statistical Modelling, Data Visualisation.
+                            <!-- Skills -->
+                            <div class="skills-section">
+                                <h3 class="h5 mb-3">Core Technologies</h3>
+                                <div class="skill-tags" role="list" aria-label="Core technology skills">
+                                    <span class="badge skill-tag" role="listitem">Python</span>
+                                    <span class="badge skill-tag" role="listitem">Machine Learning</span>
+                                    <span class="badge skill-tag" role="listitem">NLP</span>
+                                    <span class="badge skill-tag" role="listitem">Generative AI</span>
+                                    <span class="badge skill-tag" role="listitem">FastMCP</span>
+                                    <span class="badge skill-tag" role="listitem">PyTorch</span>
+                                    <span class="badge skill-tag" role="listitem">Prompt Engineering</span>
+                                    <span class="badge skill-tag" role="listitem">HuggingFace</span>
+                                    <span class="badge skill-tag" role="listitem">LangChain</span>
+                                    <span class="badge skill-tag" role="listitem">LangGraph</span>
+                                </div>
+                            </div>
                         </div>
-                        <p><b>GPA:</b> (expecting 1:1)</p>
-                        <p><b>Thesis: </b>Federated Meta-Learning: Democratizing Algorithm Selection Across Disciplines
-                            and Software Libraries.
-                        </p>
-                        <p style="margin-left: 40px;">
-                            <b>FMLearn</b>, an application which allows the exchange of meta-data about machine learning
-                            models and
-                            data for the purpose of meta-learned algorithm selection and configuration. Checkout:
-                            <a target="_blank" href="https://fmlearn.herokuapp.com/index.html">fmlearn.herokuapp.com</a>
-                            for further details about this.
-                        </p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2019 - 2020</span></div>
-                </div>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Amrita School of Engineering</h3>
-                        <div class="subheading mb-3">B.Tech. in Computer Science and Engineeringm</div>
-                        <div><b>Relevant Course Work:</b> Data Structures, Design and Analysis of Algorithm, Pattern
-                            Recognition,
-                            Data Mining and Warehousing, Database Management Systems, Software Engineering.
-                        </div>
-                        <p><b>CGPA:</b> 8.37/10.0</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2013 - 2017</span></div>
-                </div>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Publication -->
-        <section class="resume-section" id="publication">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Publication</h2>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">
-                            Federated Meta-Learning: Democratizing Algorithm Selection Across Disciplines and Software Libraries
-                        </h3>
-                        <div class="subheading mb-3">
-                            <a target = "_blank" href = "https://sites.google.com/view/automl2020/home">
-                            7th ICML Workshop on Automated Machine Learning (AutoML)</a>
-                        </div>
-                        <div><b>About:</b> “Federated Meta-Learning” (FML), a concept that allows everyone to benefit 
-                            from the data that is generated through software libraries including machine learning and 
-                            data science libraries. I have built FMLearn, an application developed using the client-server 
-                            model, which allows the exchange of meta-data about machine learning models and data in itself 
-                            for the purpose of meta-learned algorithm selection and configuration.
-                        </div>
-                        <p><b>Co-Author:</b> <a targert="_blank" href = "https://www.linkedin.com/in/jbeel/">Joeran Beel</a></p>
-                        <p><b>Check here to learn more: </b>
-                            <a target="_blank" href="https://fmlearn.herokuapp.com/index.html">fmlearn.herokuapp.com</a>
-                        </p>
-                        <p>You can download the paper or read it online from the links below:</p>
-                        <a target="_blank" href="assets/AutoML_2020_paper_39.pdf" download>
-                            <button class="btn btn-dark"><i class="fa fa-download"></i> Download</button>
-                        </a>
-                        <a target="_blank" href="https://www.automl.org/wp-content/uploads/2020/07/AutoML_2020_paper_39.pdf">
-                            <button class="btn btn-dark"><i class="fa fa-book"></i> Online</button>
-                        </a>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">June 2020</span></div>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
 
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-                <table style="width:100%">
-                    <tr>
-                        <td><div class="subheading mb-3">Programming:</div></td>
-                        <td>
-                            <p>Python, Java, R, JavaScript, C++, SQL, PL/SQL</p>
-                        </td>
-                    </tr>
-                    <tr>
-                      <td><div class="subheading mb-3">Frameworks</div></td>
-                      <td>
-                        <p>Hibernate, Spring, Spring Boot, Mockito, RESTful APIs, Kafka, Zookeeper, Flask, Express</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><div class="subheading mb-3">Web Technologies:</div></td>
-                      <td>
-                        <p>React, Node.js, Angular, jQuery, HTML, CSS, Bootstrap</p>
-                      </td>
-                    </tr>
-                    <tr>
-                        <td><div class="subheading mb-3">Machine Learning Libraries:</div></td>
-                        <td>
-                            <p>Scikit-learn, PyTourch, TensorFlow, Keras, NumPy, Pandas, Matplotlib, OpenCV, NLTK</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><div class="subheading mb-3">Operating System:</div></td>
-                        <td>
-                            <p>Windows, Linux</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><div class="subheading mb-3">Other Technologies:</div></td>
-                        <td>
-                            <p>git, Docker, Jenkins, MySQL, MongoDB, Power BI, Tableau</p>
-                        </td>
-                    </tr>
-                  </table>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-        <!-- Projects-->
-        <!-- Portfolio Grid-->
-        <section class="resume-section" id="portfolio">
-            <div class="container resume-section-content">
-                <h2 class="mb-5">
-                    Projects
-                </h2>
+        <!-- CV Section -->
+        <section id="cv" class="section" aria-labelledby="cv-heading">
+            <div class="container py-5">
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/01-image-captcha.jpg" alt="" />
+                    <div class="col-lg-10 mx-auto">
+                        <h1 id="cv-heading" class="display-5 fw-bold mb-5 text-center">Curriculum Vitae</h1>
+                        <div class="d-flex justify-content-center gap-3 mb-5">
+                            <a href="assets/Mukesh_Arambakam_Resume.pdf"" class="btn btn-primary btn-lg" data-section="contact" aria-describedby="contact-description" download>
+                                <i class="fas fa-download me-2" aria-hidden="true"></i>Download CV
                             </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Image and Audio Captcha Breaker</div>
-                                <div class="portfolio-caption-subheading text-muted">CNN Based Audio and Image Captcha
-                                    Breaker Project</div>
-                            </div>
+                            <span id="contact-description" class="sr-only">Link to Download CV</span>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        
+                        <!-- Professional Summary -->
+                        <article class="cv-section mb-5">
+                            <h2 class="h3 mb-3">Professional Summary</h2>
+                            <p class="lead">Senior Machine Learning Engineer with with 7+ years of Software Development experience, including 5 years specializing in Natural Language Processing, Neural Machine Translation, and Generative AI, backed by a Master's in Data Science. Skilled in designing and delivering end-to-end ML solutions, including Data Preprocessing, Model Training, Evaluation and Optimization. Experience in fine-tuning LLMs with PEFT methods, building Agentic AI systems, and developing scalable, production-ready ML applications. Strong background in Machine Learning, Artificial Intelligence, Statistical Modeling, and Data Analytics.</p>
+                        </article>
+
+                        <!-- Experience -->
+                        <section class="cv-section mb-5">
+                            <h2 class="h3 mb-4">Professional Experience</h2>
+                            
+                            <article class="experience-item mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h3 class="h5 mb-1">Senior Machine Learning Developer</h3>
+                                        <p class="text-muted mb-1">Oracle Corporation • Dublin, Ireland</p>
+                                    </div>
+                                    <span class="badge bg-primary" aria-label="Employment period">Nov. 2020 - Present</span>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/02-ban.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Body Area Network</div>
-                                <div class="portfolio-caption-subheading text-muted">Body Area Network -
-                                    on Amazon AWS-IoT cloud9 instances.</div>
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Launched an agentic AI system with LangGraph, supporting 10k+ LLM calls to Translation & LangDetect MCP servers.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Implemented 2 RAG systems with vector databases for domain-specific data extraction and translation enhancement.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Engineered 5+ prompt engineering solutions for back-translation, domain classification, post-editing, and data generation with sophisticated tool calling.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Used prompt chaining techniques for multi-step LLM workflows including translation evaluation, iterative improvement, pivot-translation and post-editing.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Developed a dataset analysis framework from scratch for MT training data statistics, working across 40+ language pairs.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Built a monolingual data generator for low-resource languages increasing synthetic data coverage by 30-40%.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Designed a cross-lingual vocabulary gap detection tool leveraging n-gram and embeddings, improving coverage by 20%.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Enhanced data-cleaning by reducing noise by 10% using alignment models, length ratios, and toxicity checks.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Used in-context learning methods: zero-shot and few-shot learning for domain classification & data categorization tasks.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Updated the Training pipeline to generate word alignment, length ratio models for data cleaning and evaluations.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Developed a Monolingual Engine Training pipeline and de-prioritized the tagged monolingual data during training.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Fine-tuned translation models using PEFT techniques for efficient adaptation to domain-specific tasks.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Applied quantization strategies (QLoRA) for LLM deployment, cutting resource usage by 40% in production.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Re-engineered translation evaluation repository with modern architectures, boosting performance by 25%.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Designed custom translation quality rubrics with linguists and applied LLM-as-a-Judge via direct assessment.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Integrated G-Eval metric and LLM-as-a-Judge framework for comprehensive LLM-based translation assessment.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Created visualization for evaluation scores using custom-built tools.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Expanded evaluation framework with 5 new metrics: Comet, XComet, BERTScore, CometQE, and length-ratio checks.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Assessed LLM translation consistency with Translate-then-Evaluate and LLM-as-a-Judge, raising accuracy by 20%.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Expanded language detection coverage from 45 to 192 languages.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Introduced a 3-stage hierarchical language detection architecture to differentiate sub-cultural languages.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Improved language detection accuracy by 90% for very short strings (<12 characters).</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Refactored the codebase using robust system design patterns and FastAPI to significantly boost performance by 3x times.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Packaged and published ONNX models with architecture-aware configurations for cross-compatibility.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Used architecture-specific optimizations and model quantization to reduce memory footprint by 50%.</li>
+                                </ul>
+                            </article>
+
+                            <article class="experience-item mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h3 class="h5 mb-1">Applications Engineer</h3>
+                                        <p class="text-muted mb-1">Oracle Corporation • Bangalore, India</p>
+                                    </div>
+                                    <span class="badge bg-secondary" aria-label="Employment period">Jun. 2019 - Aug. 2019</span>
+                                </div>
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Coordinated with multiple global teams, business analysts, and stakeholders to develop a cross-platform application.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Lead developer in overhauling the project security flow of the Product and introduced 2 new features.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Implemented a micro-service which communicates between tenants in a Multi-Tenant Architecture.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Mentored 10 junior team members, and provided insights about the product's internal working and underlying tools.</li>
+                                </ul>
+                            </article>
+
+                            <article class="experience-item mb-4">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h3 class="h5 mb-1">Applications Developer</h3>
+                                        <p class="text-muted mb-1">Oracle Corporation • Bangalore, India</p>
+                                    </div>
+                                    <span class="badge bg-secondary" aria-label="Employment period">Jul. 2017 - May. 2019</span>
+                                </div>
+                                <ul class="list-unstyled ms-3">
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Certificate of Appreciation: For outstanding contribution to the Product's Development.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Assumed a pivotal role in the development of 3 core features of the product along with my team members.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Optimized the performance of an internal module's filter framework with the use of dynamic SQL queries by 30%.</li>
+                                    <li><i class="fas fa-chevron-right text-primary me-2" aria-hidden="true"></i>Improved the performance of search framework by 20%, using query optimization techniques.</li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <!-- Education -->
+                        <section class="cv-section mb-5">
+                            <h2 class="h3 mb-4">Education</h2>
+                            <article class="education-item">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h3 class="h5 mb-1">Master of Science in Data Science</h3>
+                                        <p class="text-muted mb-1">Trinity College of Dublin • Dublin, Ireland</p>
+                                    </div>
+                                    <span class="badge bg-secondary" aria-label="Study period">2019 - 2020</span>
+                                </div>
+                                <p class="ms-3">Specialization in Data Science, Machine Learning and Artificial Intelligence</p>
+                            </article>
+
+                            <article class="education-item">
+                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                    <div>
+                                        <h3 class="h5 mb-1">B.Tech in Computer Science and Engineering</h3>
+                                        <p class="text-muted mb-1">Amrita School of Engineering • Coimbatore, India</p>
+                                    </div>
+                                    <span class="badge bg-secondary" aria-label="Study period">2019 - 2020</span>
+                                </div>
+                                <p class="ms-3">Specialization in Data Structures, Algorithms, and System Design</p>
+                            </article>
+                        </section>
+
+                        <!-- Certifications -->
+                        <!--
+                        <section class="cv-section mb-5">
+                            <h2 class="h3 mb-4">Certifications</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="cert-item mb-3">
+                                        <i class="fab fa-aws text-warning me-2" aria-hidden="true"></i>
+                                        <strong>AWS Certified Solutions Architect</strong>
+                                    </div>
+                                    <div class="cert-item mb-3">
+                                        <i class="fab fa-google text-primary me-2" aria-hidden="true"></i>
+                                        <strong>Google Cloud Professional ML Engineer</strong>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="cert-item mb-3">
+                                        <i class="fas fa-certificate text-success me-2" aria-hidden="true"></i>
+                                        <strong>TensorFlow Developer Certificate</strong>
+                                    </div>
+                                    <div class="cert-item mb-3">
+                                        <i class="fas fa-certificate text-info me-2" aria-hidden="true"></i>
+                                        <strong>Kubernetes Administrator (CKA)</strong>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </section>
+                        -->
+
+                        <!-- Skills -->
+                        <section class="cv-section">
+                            <h2 class="h3 mb-4">Technical Skills</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="h6 mb-3">Programming Languages</h3>
+                                    <div class="skill-tags mb-4" role="list" aria-label="Programming languages">
+                                        <span class="badge skill-tag" role="listitem">Python</span>
+                                        <span class="badge skill-tag" role="listitem">Java</span>
+                                        <span class="badge skill-tag" role="listitem">R</span>
+                                        <span class="badge skill-tag" role="listitem">JavaScript</span>
+                                        <span class="badge skill-tag" role="listitem">C++</span>
+                                        <span class="badge skill-tag" role="listitem">SQL</span>
+                                        <span class="badge skill-tag" role="listitem">PL/SQL</span>
+                                    </div>
+                                    
+                                    <h3 class="h6 mb-3">Machine Learning Libraries</h3>
+                                    <div class="skill-tags mb-4" role="list" aria-label="Machine learning libraries">
+                                        <span class="badge skill-tag" role="listitem">HuggingFace</span>
+                                        <span class="badge skill-tag" role="listitem">PyTorch</span>
+                                        <span class="badge skill-tag" role="listitem">NLTK</span>
+                                        <span class="badge skill-tag" role="listitem">spaCy</span>
+                                        <span class="badge skill-tag" role="listitem">transformers</span>
+                                        <span class="badge skill-tag" role="listitem">OpenNMT</span>
+                                        <span class="badge skill-tag" role="listitem">scikit-learn</span>
+                                        <span class="badge skill-tag" role="listitem">TensorFlow</span>
+                                        <span class="badge skill-tag" role="listitem">fasttext</span>
+                                    </div>
+
+                                    <h3 class="h6 mb-3">Other Python Libraries</h3>
+                                    <div class="skill-tags mb-4" role="list" aria-label="Other Python Libraries">
+                                        <span class="badge skill-tag" role="listitem">Numpy</span>
+                                        <span class="badge skill-tag" role="listitem">SciPy</span>
+                                        <span class="badge skill-tag" role="listitem">Pandas</span>
+                                        <span class="badge skill-tag" role="listitem">FastAPI</span>
+                                        <span class="badge skill-tag" role="listitem">matplotlib</span>
+                                        <span class="badge skill-tag" role="listitem">elasticsearch</span>
+                                        <span class="badge skill-tag" role="listitem">fastalign</span>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/03-connect-4.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Connect 4 AI</div>
-                                <div class="portfolio-caption-subheading text-muted">A multi-agent implementation
-                                    of the game Connect-4 using various algorithms</div>
+                                <div class="col-md-6">
+                                    <h3 class="h6 mb-3">Generative AI & LLM Technologies</h3>
+                                    <div class="skill-tags mb-4" role="list" aria-label="Generative AI & LLM Technologies">
+                                        <span class="badge skill-tag" role="listitem">LangChain</span>
+                                        <span class="badge skill-tag" role="listitem">LangGraph</span>
+                                        <span class="badge skill-tag" role="listitem">FastMCP</span>
+                                        <span class="badge skill-tag" role="listitem">Agentic AI</span>
+                                        <span class="badge skill-tag" role="listitem">Tool Calling</span>
+                                        <span class="badge skill-tag" role="listitem">Prompt Engineering</span>
+                                        <span class="badge skill-tag" role="listitem">RAG</span>
+                                        <span class="badge skill-tag" role="listitem">LLM-as-a-Judge</span>
+                                    </div>
+                                    
+                                    <h3 class="h6 mb-3">LLM Fine-Tuning & Optimization</h3>
+                                    <div class="skill-tags" role="list" aria-label="LLM Fine-Tuning & Optimization">
+                                        <span class="badge skill-tag" role="listitem">PEFT</span>
+                                        <span class="badge skill-tag" role="listitem">LoRA (Low-Rank Adaptation)</span>
+                                        <span class="badge skill-tag" role="listitem">QLoRA (Quantized LoRA)</span>
+                                        <span class="badge skill-tag" role="listitem">In-Context Learning</span>
+                                        <span class="badge skill-tag" role="listitem">ONNX</span>
+                                    </div>
+
+                                    <h3 class="h6 mb-3">Infrastructure & DevOps</h3>
+                                    <div class="skill-tags" role="list" aria-label="Infrastructure & DevOps">
+                                        <span class="badge skill-tag" role="listitem">PEFT</span>
+                                        <span class="badge skill-tag" role="listitem">LoRA (Low-Rank Adaptation)</span>
+                                        <span class="badge skill-tag" role="listitem">QLoRA (Quantized LoRA)</span>
+                                        <span class="badge skill-tag" role="listitem">In-Context Learning</span>
+                                        <span class="badge skill-tag" role="listitem">ONNX</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-heading">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h1 id="projects-heading" class="display-5 fw-bold mb-5 text-center">Projects</h1>
+                        
+                        <div class="row">
+                            <article class="col-lg-4 mb-4">
+                                <div class="card h-100 project-card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h5">Home Lab Infrastructure</h2>
+                                        <p class="card-text">Sophisticated home lab using Proxmox and Docker LXCs, hosted over 10 applications including Home Assistant, Nextcloud, Immich, and Jellyfin. The environment features SSO authentication, custom DNS and DHCP for network management, and secure remote access via Tailscale VPN and Funnels.</p>
+                                        <div class="tech-tags mb-3" role="list" aria-label="Technologies used">
+                                            <span class="badge bg-light text-dark" role="listitem">Proxmox</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Docker</span>
+                                            <span class="badge bg-light text-dark" role="listitem">OpenSource</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Deployements</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Networking</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="https://github.com/mukeshmk/home-lab" target="_blank" class="btn btn-outline-primary btn-sm" 
+                                           aria-label="View Home Lab Infrastructure source code on GitHub">
+                                            <i class="fab fa-github me-1" aria-hidden="true"></i>View Code
+                                        </a>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/04-twitter-sentiment-analysis.png"
-                                    alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Twitter Sentiment Analysis</div>
-                                <div class="portfolio-caption-subheading text-muted">Opinion poll where tweets were
-                                    considered as an indicator to predict election results.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </article>
+                            
+                            <article class="col-lg-4 mb-4">
+                                <div class="card h-100 project-card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h5">Image and Audio Captcha Solver</h2>
+                                        <p class="card-text">Parallelised captcha generator and solver with 93% accuracy built using TensorFlow’s CNN model.</p>
+                                        <div class="tech-tags mb-3" role="list" aria-label="Technologies used">
+                                            <span class="badge bg-light text-dark" role="listitem">Python</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Tensorflow</span>
+                                            <span class="badge bg-light text-dark" role="listitem">CNN</span>
+                                            <span class="badge bg-light text-dark" role="listitem">TTS</span>
+                                            <span class="badge bg-light text-dark" role="listitem">OpenCV</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="https://github.com/mukeshmk/image-audio-captcha" target="_blank" class="btn btn-outline-primary btn-sm"
+                                           aria-label="View Image and Audio Captcha Solver source code on GitHub">
+                                            <i class="fab fa-github me-1" aria-hidden="true"></i>View Code
+                                        </a>
+                                    </div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/05-flappy-bird.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Flappy Bird - AI</div>
-                                <div class="portfolio-caption-subheading text-muted">Python Flappy Bird AI (with NEAT)
+                            </article>
+                            
+                            <article class="col-lg-4 mb-4">
+                                <div class="card h-100 project-card">
+                                    <div class="card-body">
+                                        <h2 class="card-title h5">Connect 4 - AI</h2>
+                                        <p class="card-text">A multi-agent implementation of the game Connect-4 using MCTS, Minimax and Expectimax algorithms.</p>
+                                        <div class="tech-tags mb-3" role="list" aria-label="Technologies used">
+                                            <span class="badge bg-light text-dark" role="listitem">Kubernetes</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Docker</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Prometheus</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Grafana</span>
+                                            <span class="badge bg-light text-dark" role="listitem">GitLab CI</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Istio</span>
+                                            <span class="badge bg-light text-dark" role="listitem">Ansible</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <a href="https://github.com/mukeshmk/connect-4" target="_blank" class="btn btn-outline-primary btn-sm"
+                                           aria-label="View Connect 4 - based on AI source code on GitHub">
+                                            <i class="fab fa-github me-1" aria-hidden="true"></i>View Code
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/06-github.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Other Projects</div>
-                                <div class="portfolio-caption-subheading text-muted">Checkout my other cool projects
-                                </div>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
 
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being full time working professional, I enjoy most of my time being outdoors playing basket ball or cycling.</p>
-                <p class="mb-0">When forced indoors, I read a lot of comics or manga, I also watch a lot of anime and
-                    follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef.</P>
-                </br>
-                <p class="mb-0">I spend a large amount of my free time exploring the latest technology advancements in
-                    the Machine Learning world.</p>
-            </div>
-        </section>
-        <hr class="m-0" />
+        <!-- Blog Section -->
+        <section id="blog" class="section" aria-labelledby="blog-heading">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <!-- Blog Overview -->
+                        <div id="blog-overview">
+                            <h1 id="blog-heading" class="display-5 fw-bold mb-5 text-center">Technical Blog</h1>
+                            
+                            <div class="row">
+                                <article class="col-lg-4 mb-4">
+                                    <div class="card h-100 blog-card" data-post="1">
+                                        <div class="card-body">
+                                            <div class="mb-2">
+                                                <small class="text-muted">
+                                                    <time datetime="2025-09-15">September 15, 2025</time> • 
+                                                    <span aria-label="Estimated reading time">12 min read</span>
+                                                </small>
+                                            </div>
+                                            <h2 class="card-title h5">Getting Started with Neural Machine Translation: A Complete Guide</h2>
+                                            <p class="card-text">Comprehensive guide to implementing neural machine translation systems from scratch using modern deep learning frameworks and best practices.</p>
+                                            <span class="badge bg-secondary mb-2">Machine Learning</span>
+                                            <a href="#" class="btn btn-primary btn-sm" aria-label="Read full article about Neural Machine Translation">Read More</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="col-lg-4 mb-4">
+                                    <div class="card h-100 blog-card" data-post="2">
+                                        <div class="card-body">
+                                            <div class="mb-2">
+                                                <small class="text-muted">
+                                                    <time datetime="2025-09-10">September 10, 2025</time> • 
+                                                    <span aria-label="Estimated reading time">10 min read</span>
+                                                </small>
+                                            </div>
+                                            <h2 class="card-title h5">Building Production-Ready ML APIs with FastAPI and Docker</h2>
+                                            <p class="card-text">Best practices for creating robust, scalable machine learning APIs using FastAPI, Docker containerization, and cloud deployment strategies.</p>
+                                            <span class="badge bg-secondary mb-2">Software Engineering</span>
+                                            <a href="#" class="btn btn-primary btn-sm" aria-label="Read full article about Building ML APIs">Read More</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                
+                                <article class="col-lg-4 mb-4">
+                                    <div class="card h-100 blog-card" data-post="3">
+                                        <div class="card-body">
+                                            <div class="mb-2">
+                                                <small class="text-muted">
+                                                    <time datetime="2025-09-05">September 5, 2025</time> • 
+                                                    <span aria-label="Estimated reading time">15 min read</span>
+                                                </small>
+                                            </div>
+                                            <h2 class="card-title h5">Efficient Fine-tuning of Large Language Models with LoRA</h2>
+                                            <p class="card-text">Deep dive into parameter-efficient fine-tuning techniques for large language models using LoRA and QLoRA methodologies.</p>
+                                            <span class="badge bg-secondary mb-2">Deep Learning</span>
+                                            <a href="#" class="btn btn-primary btn-sm" aria-label="Read full article about LoRA Fine-tuning">Read More</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
 
-        <!-- Awards-->
-        <!--
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                            Machine Learning, Stanford University, Coursera. 
-                            <div class="flex-shrink-0"><span class="text-primary"></span>
-                                <a href="https://www.coursera.org/account/accomplishments/verify/ZWCUVR3HSXTM">Certificate</a>
+                        <!-- Individual Blog Posts with Structured Data -->
+                        <div id="blog-post-1" class="blog-post-content" style="display: none;">
+                            <script type="application/ld+json">
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "BlogPosting",
+                                "headline": "Getting Started with Neural Machine Translation: A Complete Guide",
+                                "description": "Comprehensive guide to implementing neural machine translation systems from scratch using modern deep learning frameworks and best practices.",
+                                "datePublished": "2025-09-15",
+                                "dateModified": "2025-09-15",
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Mukesh Arambakam"
+                                },
+                                "publisher": {
+                                    "@type": "Person",
+                                    "name": "Mukesh Arambakam"
+                                },
+                                "mainEntityOfPage": {
+                                    "@type": "WebPage",
+                                    "@id": "https://mukeshmk.github.io/#blog"
+                                },
+                                "keywords": ["neural machine translation", "NMT", "sequence-to-sequence", "attention mechanism", "transformer"],
+                                "articleSection": "Machine Learning",
+                                "wordCount": "2500",
+                                "timeRequired": "PT12M"
+                            }
+                            </script>
+                            <div class="mb-4">
+                                <button class="btn btn-outline-secondary btn-sm" onclick="showBlogOverview()" aria-label="Return to blog overview">
+                                    <i class="fas fa-arrow-left me-1" aria-hidden="true"></i>Back to Blog
+                                </button>
                             </div>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                            Cryptography I, Stanford University, Coursera
-                            <div class="flex-shrink-0"><span class="text-primary"></span>
-                                <a href="https://www.coursera.org/learn/crypto">Course Completed</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        -->
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><i class="fas fa-times mr-1 fa-2x"></i></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Image and Audio Captcha Breaker</h2>
-                                    <p class="item-intro text-muted">
-                                        <a target="_blank" href="https://github.com/mukeshmk/image-audio-captcha">
-                                            <i class="fab fa-github"></i> mukeshmk/image-audio-captcha
-                                        </a>
-                                    </p>
-                                    <img class="img-fluid d-block mx-auto"
-                                        src="assets/img/portfolio/01-image-captcha.jpg" alt="" />
-                                    <p>Convolutional Neural Network Based Audio and Image Captcha Breaker.
-                                        <br><br>
-                                        The Image captcha's are generated using a python package
-                                        <a href="https://pypi.org/project/captcha/" target="_blank">captcha</a>
-                                        which rotates scales and translates the letters and also adds noise to the iamge
-                                        making it difficult
-                                        to read. The audio captcha is generated manually using about 30 different voices
-                                        curated from
-                                        various sources and randomly selecting a voice for each character in the
-                                        captcha.
-                                        <br><br>
-                                        The captcha is then feed to a Convolutional Neural Network after various
-                                        pre-processing steps,
-                                        which then predicts what the captcha is with over 95% accuracy.
-                                        <br><br>
-                                        For further details please read the
-                                        <a href="https://github.com/mukeshmk/image-audio-captcha/blob/master/README.md"
-                                            target="_blank">README.md</a> file on my GitHub.
-                                    </p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><i class="fas fa-times mr-1 fa-2x"></i></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Body Area Network</h2>
-                                    <p class="item-intro text-muted">
-                                        <a target="_blank" href="https://github.com/mukeshmk/ban-on-awscloud9">
-                                            <i class="fab fa-github"></i> mukeshmk/ban-on-awscloud9
-                                        </a>
-                                    </p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-ban.jpg"
-                                        alt="" />
-                                    <p> Various devices like: blood pressure sensor, body temperature sensor, ecg
-                                        sensor, heart beat sensor,
-                                        insulin sensor, lactic acid sensor, ph value sensor, pulse oximeter sensor and
-                                        respiratory monitor
-                                        sensor were simulated along with a command line iterface for the external agent
-                                        to interface with
-                                        the iot devices in real time, a sink device (a highly function/power device
-                                        which is always in close
-                                        proximity to the the user - say a mobile phone) which transmites all the data
-                                        from the devices to the
-                                        cerntral server and the server in itself which alerts the docters in case of an
-                                        emergency.
-                                        <br><br>
-                                        The concepts used in the project are: AWS IoT Core, IoT Device Registry, AWS IoT
-                                        Rules,
-                                        AWS IoT Device Shadows, AWS APIs and SDKs with IoT, IoT communications protocols
-                                        and Security.
-                                        <br><br>
-                                        For further details please read the
-                                        <a href="https://github.com/mukeshmk/ban-on-awscloud9/blob/master/README.md"
-                                            target="_blank">README.md</a> file on my GitHub.
-                                    </p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><i class="fas fa-times mr-1 fa-2x"></i></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Connect 4 AI</h2>
-                                    <p class="item-intro text-muted">
-                                        <a target="_blank" href="https://github.com/mukeshmk/connect-4">
-                                            <i class="fab fa-github"></i> mukeshmk/connect-4
-                                        </a>
-                                    </p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-connect-4.jpg"
-                                        alt="" />
-                                    <p>A multi-agent implementation of the game Connect-4 using various algorithms like
-                                        Monte Carlo Tree Search, Minimax and Exptimax algorithms. Apart from these
-                                        algorithms/bots,
-                                        simple bots like a random bot and a forward checking bot were also implemented.
-                                        <br><br>
-                                        The game is designed in such a way that it allows a Player vs Player mode,
-                                        Player vs Agent and Agent vs Agent modes of games. An Agent's game play can be
-                                        constomised by changing it's paramerters i.e., depth and max iterations, to
-                                        change the
-                                        difficult level of the game play.
-                                        <br><br>
-                                        For further details please read the
-                                        <a href="https://github.com/mukeshmk/connect-4/blob/master/README.md"
-                                            target="_blank">README.md</a> file on my GitHub.
-                                    </p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><i class="fas fa-times mr-1 fa-2x"></i></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Twitter Sentiment Analysis</h2>
-                                    <p class="item-intro text-muted">
-                                        <a target="_blank"
-                                            href="https://github.com/mukeshmk/twitter-sentiment-analysis">
-                                            <i class="fab fa-github"></i> mukeshmk/twitter-sentiment-analysis
-                                        </a>
-                                    </p>
-                                    <img class="img-fluid d-block mx-auto"
-                                        src="assets/img/portfolio/04-twitter-sentiment-analysis.png" alt="" />
-                                    <p>Twitter Sentiment Analysis - An opinion poll where public tweets considered as an
-                                        indicator to predict the actual election results. The set of gathered tweets was
-                                        pre-processed
-                                        before it was used for training the classifier. The following pre-processing
-                                        steps were applied
-                                        on the data-set: lower-case convertion, punctuation removal, stemming, stopwords
-                                        removal, emoji
-                                        convertion, case change, and application of word-digit boundaries.
-                                        <br><br>
-                                        These pre-processing steps were used to clean the tweets which was then feed
-                                        into a Gaussian
-                                        Naive Bayes Classifier, which was used to predecit the sentiment of the tweet
-                                        and and then to obtain
-                                        the results.
-                                        <br><br>
-                                        For further details please read the
-                                        <a href="https://github.com/mukeshmk/twitter-sentiment-analysis/blob/master/report/ARAMBAKAM-MUKESH-19301497-CS7IS4-FINAL-GROUP7-CHAIR.pdf"
-                                            target="_blank">project report</a> file on my GitHub.
-                                    </p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><i class="fas fa-times mr-1 fa-2x"></i></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Flappy Bird AI</h2>
-                                    <p class="item-intro text-muted">
-                                        <a target="_blank" href="https://github.com/mukeshmk/flappy-bird-ai">
-                                            <i class="fab fa-github"></i> mukeshmk/flappy-bird-ai
-                                        </a>
-                                    </p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-flappy-bird.jpg"
-                                        alt="" />
-                                    <p> Recreation of the game Flappy Bird using Artificial Intelligence.
-                                        <br><br>
-                                        This AI model using the NEAT Genetic Algorithm, which is based on this paper
-                                        <a target="_blank"
-                                            href="http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf">
-                                            Evolving Neural Networks through Augmenting Topologies
-                                        </a> which focuses on evolving dense neural networks node by node.
-                                        To under this better have a quick read of the above mentioned paper or this
-                                        <a target="_blank"
-                                            href="https://towardsdatascience.com/neat-an-awesome-approach-to-neuroevolution-3eca5cc7930f">
-                                            blog post</a>.
-                                        <br><br>
-                                        For further details please read the
-                                        <a href="https://github.com/mukeshmk/flappy-bird-ai/blob/master/README.md"
-                                            target="_blank">README.md</a> file on my GitHub.
-                                    </p>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><i class="fas fa-times mr-1 fa-2x"></i></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Other Projects</h2>
-                                    <p class="item-intro text-muted">Herer is a small list of other projects which I
-                                        have worked on .</p>
-                                    <ul class="list-inline">
-                                        <li>T-Rex Jump AI using NEAT (Genetic Algorithm):
-                                            <a target="_blank" href="https://github.com/mukeshmk/trex-jump-ai">
-                                                <i class="fab fa-github"></i> mukeshmk/trex-jump-ai
-                                            </a>
-                                        </li>
-                                        <li>Hand Gesture Recognition using OpenCV and CNN:
-                                            <a target="_blank" href="https://github.com/mukeshmk/hand-gesture">
-                                                <i class="fab fa-github"></i> mukeshmk/hand-gesture
-                                            </a>
-                                        </li>
-                                        <li>Statistical Modelling of the wine data-set:
-                                            <a target="_blank" href="https://github.com/mukeshmk/statistical-modelling">
-                                                <i class="fab fa-github"></i> mukeshmk/statistical-modelling
-                                            </a>
-                                        </li>
-                                        <li>Data Visualization of popular graphs:
-                                            <a target="_blank" href="https://github.com/mukeshmk/data-visualization">
-                                                <i class="fab fa-github"></i> mukeshmk/data-visualization
-                                            </a>
-                                        </li>
-                                        <li>HangMan ChatBot using Twilio Sandbox:
-                                            <a target="_blank" href="https://github.com/mukeshmk/whatsapp-hangman-bot">
-                                                <i class="fab fa-github"></i> mukeshmk/whatsapp-hangman-bot
-                                            </a>
-                                        </li>
-                                        <br><br>
-                                        <li>
-                                            Check out my other projects as well on
-                                            <a target="_blank" href="https://github.com/mukeshmk/">
-                                                <i class="fab fa-github"></i> mukeshmk
-                                            </a>
-                                        </li>
+                            <article>
+                                <header class="mb-4">
+                                    <div class="mb-2">
+                                        <small class="text-muted">
+                                            <time datetime="2025-09-15">September 15, 2025</time> • 
+                                            <span aria-label="Estimated reading time">12 min read</span> • 
+                                            <span class="badge bg-secondary">Machine Learning</span>
+                                        </small>
+                                    </div>
+                                    <h1 class="display-6 fw-bold">Getting Started with Neural Machine Translation: A Complete Guide</h1>
+                                </header>
+                                <div class="blog-content">
+                                    <p class="lead">Neural Machine Translation (NMT) has revolutionized how we approach language translation tasks. In this comprehensive guide, we'll explore the fundamentals of NMT and walk through implementing a basic system from scratch.</p>
+                                    
+                                    <h2>What is Neural Machine Translation?</h2>
+                                    <p>Neural Machine Translation is an approach to machine translation that uses artificial neural networks to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model.</p>
+                                    
+                                    <h2>Key Components</h2>
+                                    <ul>
+                                        <li><strong>Encoder-Decoder Architecture:</strong> The backbone of most NMT systems</li>
+                                        <li><strong>Attention Mechanisms:</strong> Allowing the model to focus on relevant parts of the input</li>
+                                        <li><strong>Subword Tokenization:</strong> Handling out-of-vocabulary words effectively</li>
+                                        <li><strong>Beam Search:</strong> Generating high-quality translations during inference</li>
                                     </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>Close Project
-                                    </button>
+                                    
+                                    <h2>Implementation Example</h2>
+                                    <p>Here's a basic example of how to implement a simple NMT model using TensorFlow:</p>
+                                    <pre><code>import tensorflow as tf
+from tensorflow.keras.layers import LSTM, Dense, Embedding
+
+class NMTModel(tf.keras.Model):
+    def __init__(self, vocab_size, embedding_dim, hidden_units):
+        super(NMTModel, self).__init__()
+        self.embedding = Embedding(vocab_size, embedding_dim)
+        self.encoder = LSTM(hidden_units, return_state=True)
+        self.decoder = LSTM(hidden_units, return_sequences=True)
+        self.output_layer = Dense(vocab_size, activation='softmax')
+    
+    def call(self, inputs):
+        # Encoder
+        encoder_outputs, state_h, state_c = self.encoder(inputs)
+        # Decoder
+        decoder_outputs = self.decoder(inputs, initial_state=[state_h, state_c])
+        return self.output_layer(decoder_outputs)</code></pre>
+                                    
+                                    <h2>Training Considerations</h2>
+                                    <p>When training NMT models, several factors are crucial for success:</p>
+                                    <ul>
+                                        <li>Data preprocessing and cleaning</li>
+                                        <li>Proper tokenization strategies</li>
+                                        <li>Learning rate scheduling</li>
+                                        <li>Regularization techniques</li>
+                                        <li>Evaluation metrics (BLEU, METEOR, etc.)</li>
+                                    </ul>
+                                    
+                                    <h2>Conclusion</h2>
+                                    <p>Neural Machine Translation represents a significant advancement in language processing. While this guide covers the basics, modern systems often incorporate transformer architectures, pre-trained models, and sophisticated training techniques for state-of-the-art performance.</p>
                                 </div>
+                            </article>
+                        </div>
+
+                        <div id="blog-post-2" class="blog-post-content" style="display: none;">
+                            <script type="application/ld+json">
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "BlogPosting",
+                                "headline": "Building Production-Ready ML APIs with FastAPI and Docker",
+                                "description": "Best practices for creating robust, scalable machine learning APIs using FastAPI, Docker containerization, and cloud deployment strategies.",
+                                "datePublished": "2025-09-10",
+                                "dateModified": "2025-09-10",
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Mukesh Arambakam"
+                                },
+                                "publisher": {
+                                    "@type": "Person",
+                                    "name": "Mukesh Arambakam"
+                                },
+                                "mainEntityOfPage": {
+                                    "@type": "WebPage",
+                                    "@id": "https://mukeshmk.github.io/#blog"
+                                },
+                                "keywords": ["FastAPI", "ML API", "Docker", "microservices", "model serving", "MLOps"],
+                                "articleSection": "Software Engineering",
+                                "wordCount": "2200",
+                                "timeRequired": "PT10M"
+                            }
+                            </script>
+                            <div class="mb-4">
+                                <button class="btn btn-outline-secondary btn-sm" onclick="showBlogOverview()" aria-label="Return to blog overview">
+                                    <i class="fas fa-arrow-left me-1" aria-hidden="true"></i>Back to Blog
+                                </button>
+                            </div>
+                            <article>
+                                <header class="mb-4">
+                                    <div class="mb-2">
+                                        <small class="text-muted">
+                                            <time datetime="2025-09-10">September 10, 2025</time> • 
+                                            <span aria-label="Estimated reading time">10 min read</span> • 
+                                            <span class="badge bg-secondary">Software Engineering</span>
+                                        </small>
+                                    </div>
+                                    <h1 class="display-6 fw-bold">Building Production-Ready ML APIs with FastAPI and Docker</h1>
+                                </header>
+                                <div class="blog-content">
+                                    <p class="lead">Creating robust, scalable machine learning APIs is crucial for deploying ML models in production. This guide covers best practices using FastAPI, Docker, and cloud deployment strategies.</p>
+                                    
+                                    <h2>Why FastAPI for ML APIs?</h2>
+                                    <p>FastAPI provides several advantages for ML applications:</p>
+                                    <ul>
+                                        <li>High performance comparable to NodeJS and Go</li>
+                                        <li>Automatic API documentation with Swagger UI</li>
+                                        <li>Built-in data validation using Pydantic</li>
+                                        <li>Async support for concurrent requests</li>
+                                    </ul>
+                                    
+                                    <h2>Basic ML API Structure</h2>
+                                    <pre><code>from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import joblib
+import numpy as np
+
+app = FastAPI(title="ML Model API", version="1.0.0")
+
+# Load model at startup
+model = joblib.load("model.pkl")
+
+class PredictionRequest(BaseModel):
+    features: list[float]
+    
+class PredictionResponse(BaseModel):
+    prediction: float
+    confidence: float
+
+@app.post("/predict", response_model=PredictionResponse)
+async def predict(request: PredictionRequest):
+    try:
+        features = np.array(request.features).reshape(1, -1)
+        prediction = model.predict(features)[0]
+        confidence = max(model.predict_proba(features)[0])
+        
+        return PredictionResponse(
+            prediction=prediction,
+            confidence=confidence
+        )
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))</code></pre>
+                                    
+                                    <h2>Containerization with Docker</h2>
+                                    <p>Dockerizing your ML API ensures consistent deployment across environments:</p>
+                                    <pre><code>FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]</code></pre>
+                                    
+                                    <h2>Scalability Considerations</h2>
+                                    <ul>
+                                        <li><strong>Model Loading:</strong> Load models once at startup, not per request</li>
+                                        <li><strong>Caching:</strong> Implement Redis for frequently requested predictions</li>
+                                        <li><strong>Async Processing:</strong> Use background tasks for heavy computations</li>
+                                        <li><strong>Load Balancing:</strong> Deploy multiple instances behind a load balancer</li>
+                                    </ul>
+                                    
+                                    <h2>Monitoring and Logging</h2>
+                                    <p>Production ML APIs require comprehensive monitoring:</p>
+                                    <ul>
+                                        <li>Request/response logging</li>
+                                        <li>Model performance metrics</li>
+                                        <li>Health checks and uptime monitoring</li>
+                                        <li>Alert systems for anomalies</li>
+                                    </ul>
+                                    
+                                    <h2>Deployment Strategies</h2>
+                                    <p>Consider these deployment options based on your needs:</p>
+                                    <ul>
+                                        <li><strong>Kubernetes:</strong> For complex, multi-service deployments</li>
+                                        <li><strong>AWS Lambda:</strong> For lightweight, serverless APIs</li>
+                                        <li><strong>Google Cloud Run:</strong> Managed containerized deployments</li>
+                                        <li><strong>Traditional VMs:</strong> For maximum control and customization</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div id="blog-post-3" class="blog-post-content" style="display: none;">
+                            <script type="application/ld+json">
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "BlogPosting",
+                                "headline": "Efficient Fine-tuning of Large Language Models with LoRA",
+                                "description": "Deep dive into parameter-efficient fine-tuning techniques for large language models using LoRA and QLoRA methodologies.",
+                                "datePublished": "2025-09-05",
+                                "dateModified": "2025-09-05",
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Mukesh Arambakam"
+                                },
+                                "publisher": {
+                                    "@type": "Person",
+                                    "name": "Mukesh Arambakam"
+                                },
+                                "mainEntityOfPage": {
+                                    "@type": "WebPage",
+                                    "@id": "https://mukeshmk.github.io/#blog"
+                                },
+                                "keywords": ["LoRA", "QLoRA", "fine-tuning", "large language models", "parameter efficient", "PEFT"],
+                                "articleSection": "Deep Learning",
+                                "wordCount": "3000",
+                                "timeRequired": "PT15M"
+                            }
+                            </script>
+                            <div class="mb-4">
+                                <button class="btn btn-outline-secondary btn-sm" onclick="showBlogOverview()" aria-label="Return to blog overview">
+                                    <i class="fas fa-arrow-left me-1" aria-hidden="true"></i>Back to Blog
+                                </button>
+                            </div>
+                            <article>
+                                <header class="mb-4">
+                                    <div class="mb-2">
+                                        <small class="text-muted">
+                                            <time datetime="2025-09-05">September 5, 2025</time> • 
+                                            <span aria-label="Estimated reading time">15 min read</span> • 
+                                            <span class="badge bg-secondary">Deep Learning</span>
+                                        </small>
+                                    </div>
+                                    <h1 class="display-6 fw-bold">Efficient Fine-tuning of Large Language Models with LoRA</h1>
+                                </header>
+                                <div class="blog-content">
+                                    <p class="lead">Parameter-efficient fine-tuning techniques like LoRA (Low-Rank Adaptation) have made it possible to adapt large language models for specific tasks without the computational overhead of full fine-tuning.</p>
+                                    
+                                    <h2>What is LoRA?</h2>
+                                    <p>LoRA is a technique that reduces the number of trainable parameters for downstream tasks by learning pairs of rank-decomposition matrices while freezing the original weights. This approach can reduce trainable parameters by 10,000x and GPU memory requirement by 3x.</p>
+                                    
+                                    <h2>How LoRA Works</h2>
+                                    <p>Instead of updating the full weight matrix W, LoRA learns a low-rank decomposition:</p>
+                                    <ul>
+                                        <li>W = W₀ + ΔW = W₀ + BA</li>
+                                        <li>Where B ∈ ℝᵈˣʳ and A ∈ ℝʳˣᵏ</li>
+                                        <li>r is the rank, typically much smaller than d and k</li>
+                                    </ul>
+                                    
+                                    <h2>Implementation with Hugging Face PEFT</h2>
+                                    <pre><code>from peft import LoraConfig, get_peft_model, TaskType
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# Load base model
+model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
+
+# Configure LoRA
+lora_config = LoraConfig(
+    task_type=TaskType.CAUSAL_LM,
+    inference_mode=False,
+    r=16,  # Rank
+    lora_alpha=32,  # LoRA scaling parameter
+    lora_dropout=0.1,  # LoRA dropout
+    target_modules=["c_attn", "c_proj"]  # Target modules
+)
+
+# Apply LoRA to model
+model = get_peft_model(model, lora_config)
+
+# Print trainable parameters
+model.print_trainable_parameters()
+# Output: trainable params: 1,572,864 || all params: 117,677,056 || trainable%: 1.34</code></pre>
+                                    
+                                    <h2>QLoRA: Quantized LoRA</h2>
+                                    <p>QLoRA further reduces memory requirements by using 4-bit quantization:</p>
+                                    <pre><code>from transformers import BitsAndBytesConfig
+import torch
+
+# Configure 4-bit quantization
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16,
+    bnb_4bit_use_double_quant=True,
+)
+
+# Load model with quantization
+model = AutoModelForCausalLM.from_pretrained(
+    "microsoft/DialoGPT-medium",
+    quantization_config=bnb_config,
+    device_map="auto"
+)</code></pre>
+                                    
+                                    <h2>Training Configuration</h2>
+                                    <p>Optimal training requires careful configuration:</p>
+                                    <ul>
+                                        <li><strong>Learning Rate:</strong> Typically 1e-4 to 5e-4 for LoRA</li>
+                                        <li><strong>Batch Size:</strong> Start with smaller batches due to memory constraints</li>
+                                        <li><strong>Rank Selection:</strong> Balance between performance and efficiency</li>
+                                        <li><strong>Target Modules:</strong> Focus on attention and projection layers</li>
+                                    </ul>
+                                    
+                                    <h2>Advantages of LoRA</h2>
+                                    <ul>
+                                        <li>Dramatically reduced memory requirements</li>
+                                        <li>Faster training and inference</li>
+                                        <li>Preserves pre-trained knowledge</li>
+                                        <li>Easy to switch between different task adaptations</li>
+                                        <li>Can be combined with other techniques (QLoRA, AdaLoRA)</li>
+                                    </ul>
+                                    
+                                    <h2>Best Practices</h2>
+                                    <ul>
+                                        <li>Start with rank values between 8-64</li>
+                                        <li>Use gradient checkpointing to save memory</li>
+                                        <li>Monitor validation loss to prevent overfitting</li>
+                                        <li>Consider task-specific hyperparameter tuning</li>
+                                        <li>Experiment with different target modules</li>
+                                    </ul>
+                                    
+                                    <h2>Conclusion</h2>
+                                    <p>LoRA and QLoRA have democratized fine-tuning of large language models, making it accessible to researchers and practitioners with limited computational resources. These techniques represent a significant step toward more efficient and sustainable AI development.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h1 id="contact-heading" class="display-5 fw-bold mb-5">Get In Touch</h1>
+                        
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h2 class="h5">Email</h2>
+                                    <p class="text-muted">amukesh.mk@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h2 class="h5">Phone</h2>
+                                    <p class="text-muted">+353 89 4960 450</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h2 class="h5">Location</h2>
+                                    <p class="text-muted">Dublin, Ireland</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="contact-item">
+                                    <i class="fas fa-briefcase fa-2x text-primary mb-3" aria-hidden="true"></i>
+                                    <h2 class="h5">Availability</h2>
+                                    <p class="text-muted">Available for consultation</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media Links -->
+                        <div class="social-links">
+                            <h2 class="h5 mb-4">Connect With Me</h2>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="https://www.linkedin.com/in/mukeshmk95/" target="_blank" class="btn btn-outline-primary btn-lg" 
+                                   aria-label="Connect with Mukesh on LinkedIn">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/mukeshmk/" target="_blank" class="btn btn-outline-primary btn-lg"
+                                   aria-label="View Mukesh's projects on GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="mailto:amukesh.mk@gmail.com" class="btn btn-outline-primary btn-lg"
+                                   aria-label="Send email to Mukesh">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://x.com/amukeshmk" target="_blank" class="btn btn-outline-primary btn-lg"
+                                   aria-label="Follow Mukesh on X">
+                                    <i class="fab fa-x" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-5" role="contentinfo">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="text-muted mb-0">&copy; 2025 Mukesh Arambakam. All rights reserved. 
+                        <span class="visually-hidden">Senior Machine Leaning Engineer and Software Developer specializing in Machine Learning and Natural Language Processing in Dublin, Ireland.</span>
+                    </p>
+                </div>
+            </div>
         </div>
+    </footer>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="assets/js/scripts.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="app.js"></script>
 </body>
-
 </html>
