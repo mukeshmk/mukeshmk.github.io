@@ -290,11 +290,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         updateDocumentTitle(section) {
             const titleMap = {
-                'home': 'John Smith - Senior ML Engineer & Software Developer',
-                'cv': 'CV - John Smith | Senior ML Engineer & Software Developer',
-                'projects': 'Projects - John Smith | ML Engineer & Software Developer', 
-                'blog': 'Technical Blog - John Smith | ML Engineering Insights',
-                'contact': 'Contact - John Smith | Get In Touch'
+                'home': 'Mukesh Arambakam - Senior Machine Learning Engineer & Software Developer',
+                'cv': 'CV - Mukesh Arambakam | Senior Machine Learning Engineer & Software Developer',
+                'projects': 'Projects - Mukesh Arambakam | Senior Machine Learning Engineer & Software Developer',
+                'blog': 'Technical Blog - Mukesh Arambakam | ML Engineering Insights',
+                'contact': 'Contact - Mukesh Arambakam | Get In Touch'
             };
 
             if (titleMap[section]) {
@@ -304,11 +304,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         updatePageDescription(section) {
             const descriptionMap = {
-                'home': 'Senior Software Developer specializing in Machine Learning, NLP, and Neural Machine Translation. 5+ years experience building scalable ML systems in Dublin, Ireland.',
-                'cv': 'Detailed curriculum vitae of John Smith, Senior ML Engineer with expertise in Python, TensorFlow, PyTorch, and enterprise ML systems.',
-                'projects': 'Explore machine learning projects including agentic AI systems, LLM fine-tuning pipelines, and Kubernetes infrastructure.',
-                'blog': 'Technical blog posts about machine learning, neural networks, MLOps, and software development best practices.',
-                'contact': 'Get in touch with John Smith for machine learning consulting, software development, or technical collaboration opportunities.'
+                'home': 'Senior Machine Learning Engineer with with 7+ years of Software Development experience, including 5 years specializing in Natural Language Processing, Neural Machine Translation, and Generative AI in Dublin, Ireland.',
+                'cv': 'Detailed curriculum vitae of Mukesh Arambakam, Senior Machine Learning Engineer with expertise in Python, PyTorch, FastMCP and GenAI Systems.',
+                'projects': 'Explore projects including Home Lab Infrastructure, ML and AI usecases, etc.',
+                'blog': 'Technical blog posts about machine learning, neural networks, GenAI, and software development best practices.',
+                'contact': 'Get in touch with Mukesh Arambakam for machine learning consulting, software development, or technical collaboration opportunities.'
             };
 
             let metaDescription = document.querySelector('meta[name="description"]');
@@ -428,7 +428,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Update document title for SEO
                 const postTitle = blogPost.querySelector('h1').textContent;
-                document.title = `${postTitle} | John Smith - ML Engineer`;
+                document.title = `${postTitle} | Mukesh Arambakam - Machine Learning Engineer`;
                 
                 // Focus the blog post heading
                 const heading = blogPost.querySelector('h1');
@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.currentPost = null;
 
                 // Reset document title
-                document.title = 'Technical Blog - John Smith | ML Engineering Insights';
+                document.title = 'Technical Blog - Mukesh Arambakam | ML Engineering Insights';
                 
                 // Reset URL hash
                 history.pushState({}, '', '#blog');
