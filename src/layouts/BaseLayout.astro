@@ -1,0 +1,169 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/jetbrains-mono';
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Absolute or root-relative image path for social cards. */
+  image?: string;
+  /** Optional override for the canonical URL; defaults to the current path. */
+  canonical?: string;
+  /** Marks the page as an article for Open Graph (blog posts). */
+  article?: boolean;
+  /** Extra structured data (e.g. BlogPosting) injected into <head>. */
+  jsonLd?: Record<string, unknown> | null;
+  /** Prevent indexing (e.g. draft previews). */
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = site.description,
+  image = site.ogImage,
+  canonical,
+  article = false,
+  jsonLd = null,
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title
+  ? `${title} · ${site.name}`
+  : `${site.name} · ${site.role} at ${site.company}`;
+
+const canonicalURL = new URL(canonical ?? Astro.url.pathname, site.url);
+const socialImage = new URL(image, site.url);
+
+// Person JSON-LD reflects the current role at Genesys.
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  jobTitle: `${site.role}`,
+  url: site.url,
+  image: new URL('/assets/profile-photo.jpg', site.url).href,
+  email: `mailto:${site.email}`,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Dublin',
+    addressCountry: 'Ireland',
+  },
+  worksFor: {
+    '@type': 'Organization',
+    name: site.company,
+  },
+  alumniOf: {
+    '@type': 'EducationalOrganization',
+    name: 'Trinity College Dublin',
+  },
+  sameAs: [
+    'https://github.com/mukeshmk',
+    'https://www.linkedin.com/in/mukeshmk95',
+    'https://x.com/amukeshmk',
+  ],
+  knowsAbout: [
+    'Machine Learning',
+    'Large Language Models',
+    'Generative AI',
+    'Retrieval-Augmented Generation',
+    'AI Agents',
+    'Natural Language Processing',
+    'Neural Machine Translation',
+    'Python',
+  ],
+};
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={site.name} />
+    <link rel="canonical" href={canonicalURL.href} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:image" content={socialImage.href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IE" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage.href} />
+    <meta name="twitter:creator" content="@amukeshmk" />
+
+    <!-- Theme color for mobile browser chrome -->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#020617"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <!-- Person structured data -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(personLd)}
+    />
+    {
+      jsonLd && (
+        <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+      )
+    }
+
+    <!-- No-FOUC theme init: runs before first paint. -->
+    <script is:inline>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia(
+            '(prefers-color-scheme: dark)'
+          ).matches;
+          var dark = stored ? stored === 'dark' : prefersDark;
+          document.documentElement.classList.toggle('dark', dark);
+        } catch (e) {
+          /* no-op */
+        }
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen font-sans">
+    <a
+      href="#main-content"
+      class="sr-only rounded-md bg-accent-600 px-4 py-2 font-semibold text-white focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100]"
+    >
+      Skip to main content
+    </a>
+
+    <Nav />
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
