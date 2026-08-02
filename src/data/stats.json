@@ -1,0 +1,26 @@
+[
+  {
+    "id": "years-software",
+    "order": 1,
+    "value": "7+",
+    "label": "Years in software engineering"
+  },
+  {
+    "id": "years-ml",
+    "order": 2,
+    "value": "5+",
+    "label": "Years focused on NLP & GenAI"
+  },
+  {
+    "id": "languages",
+    "order": 3,
+    "value": "192",
+    "label": "Languages supported in production"
+  },
+  {
+    "id": "efficiency",
+    "order": 4,
+    "value": "~40%",
+    "label": "Cut in model resource usage"
+  }
+]

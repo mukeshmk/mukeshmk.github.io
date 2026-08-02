@@ -1,0 +1,57 @@
+[
+  {
+    "id": "languages",
+    "order": 1,
+    "title": "Languages",
+    "skills": ["Python", "Java", "C++", "JavaScript", "R", "SQL", "PL/SQL"]
+  },
+  {
+    "id": "genai-llms",
+    "order": 2,
+    "title": "GenAI & LLMs",
+    "skills": [
+      "LangChain",
+      "LangGraph",
+      "FastMCP",
+      "AI Agents",
+      "Tool Calling",
+      "Prompt Engineering",
+      "RAG",
+      "LLM-as-a-Judge"
+    ]
+  },
+  {
+    "id": "ml-nlp",
+    "order": 3,
+    "title": "ML & NLP",
+    "skills": [
+      "PyTorch",
+      "HuggingFace",
+      "transformers",
+      "TensorFlow",
+      "scikit-learn",
+      "spaCy",
+      "NLTK",
+      "OpenNMT",
+      "fastText"
+    ]
+  },
+  {
+    "id": "fine-tuning-optimization",
+    "order": 4,
+    "title": "Fine-Tuning & Optimization",
+    "skills": ["PEFT", "LoRA", "QLoRA", "In-Context Learning", "ONNX", "Quantization"]
+  },
+  {
+    "id": "data-backend",
+    "order": 5,
+    "title": "Data & Backend",
+    "skills": ["FastAPI", "NumPy", "Pandas", "SciPy", "Elasticsearch", "matplotlib"]
+  },
+  {
+    "id": "infrastructure-devops",
+    "order": 6,
+    "title": "Infrastructure & DevOps",
+    "skills": ["Docker", "Proxmox", "Linux", "Git", "CI/CD"]
+  }
+]
