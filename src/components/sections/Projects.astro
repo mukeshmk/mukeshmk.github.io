@@ -1,0 +1,99 @@
+---
+import { getCollection } from 'astro:content';
+import SectionHeading from '../SectionHeading.astro';
+import ProjectCard from '../ProjectCard.astro';
+
+// Drafts are hidden in production, visible in dev. Featured projects sort
+// first, then by ascending `order`.
+const projects = (
+  await getCollection('projects', ({ data }) => import.meta.env.DEV || !data.draft)
+).sort(
+  (a, b) =>
+    Number(b.data.featured) - Number(a.data.featured) ||
+    a.data.order - b.data.order
+);
+---
+
+<section
+  id="projects"
+  class="mx-auto max-w-6xl scroll-mt-20 px-6 py-20"
+  aria-labelledby="projects-heading"
+>
+  <SectionHeading eyebrow="Work" title="Projects" />
+
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </div>
+
+  <div class="mt-10 flex justify-center">
+    <a
+      href="https://github.com/mukeshmk"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:border-accent-400 dark:hover:text-accent-300"
+    >
+      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.96 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.53.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3.01-.4c1.02 0 2.05.14 3.01.4 2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.77.84 1.23 1.92 1.23 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"
+        ></path>
+      </svg>
+      More projects on GitHub
+      <svg
+        class="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M5 12h14M13 6l6 6-6 6"></path>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Publications callout -->
+  <div
+    class="mt-12 overflow-hidden rounded-3xl border border-brand-200 bg-gradient-to-br from-accent-50 to-brand-50 p-8 dark:border-brand-500/30 dark:from-slate-900 dark:to-slate-900"
+  >
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+      <div class="max-w-2xl">
+        <p
+          class="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400"
+        >
+          Publication
+        </p>
+        <h3 class="mt-2 text-xl font-bold text-slate-900 dark:text-white">
+          Federated Meta-Learning: Democratizing Algorithm Selection Across
+          Disciplines and Software Libraries
+        </h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+          7th ICML Workshop on Automated Machine Learning (AutoML) &middot; June
+          2020
+        </p>
+      </div>
+      <a
+        href="/assets/automl-2020-paper-39.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex flex-none items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-accent-500 to-brand-600 px-6 py-3 font-semibold text-white shadow-lg shadow-brand-500/20 transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
+      >
+        <svg
+          class="h-4 w-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+        </svg>
+        Read the paper
+      </a>
+    </div>
+  </div>
+</section>

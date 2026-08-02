@@ -1,0 +1,91 @@
+---
+import SectionHeading from '../SectionHeading.astro';
+import { site, socials } from '../../data/site';
+---
+
+<section
+  id="contact"
+  class="scroll-mt-20 border-t border-slate-200 bg-slate-50 py-20 dark:border-slate-800 dark:bg-slate-900/50"
+  aria-labelledby="contact-heading"
+>
+  <div class="mx-auto max-w-3xl px-6 text-center">
+    <SectionHeading eyebrow="Contact" title="Let's talk" align="center" />
+
+    <p class="-mt-4 text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+      Have an interesting AI/ML problem, a role, or just want to compare notes on
+      agents and LLMs? The fastest way to reach me is email - I read every
+      message.
+    </p>
+
+    <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+      <a
+        href={`mailto:${site.email}`}
+        class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-accent-500 to-brand-600 px-6 py-3 font-semibold text-white shadow-lg shadow-accent-500/20 transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
+      >
+        <svg
+          class="h-4 w-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+        </svg>
+        {site.email}
+      </a>
+      <a
+        href={site.resume}
+        download
+        class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:border-accent-400 dark:hover:text-accent-300"
+      >
+        <svg
+          class="h-4 w-4"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"></path>
+        </svg>
+        Download CV
+      </a>
+    </div>
+
+    <p class="mt-6 text-sm text-slate-500 dark:text-slate-400">
+      Based in {site.location}
+    </p>
+
+    <ul class="mt-6 flex items-center justify-center gap-3" aria-label="Social links">
+      {
+        socials.map((s) => (
+          <li>
+            <a
+              href={s.href}
+              target={s.href.startsWith('http') ? '_blank' : undefined}
+              rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-500 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400 dark:hover:border-accent-400 dark:hover:text-accent-300"
+              aria-label={s.label}
+            >
+              <Fragment set:html={s.icon} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    {/*
+      This is a static site, so there's no server to handle form POSTs. To add a
+      working contact form later, sign up for a form backend (e.g. Formspree),
+      then replace the buttons above with:
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"> ... </form>
+    */}
+  </div>
+</section>
