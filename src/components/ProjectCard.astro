@@ -1,0 +1,117 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Badge from './Badge.astro';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+}
+const { project } = Astro.props;
+const { data } = project;
+
+const linkEntries = Object.entries(data.links ?? {}).filter(
+  ([, url]) => Boolean(url)
+) as ['github' | 'live' | 'paper', string][];
+
+const linkLabels: Record<string, string> = {
+  github: 'Code',
+  live: 'Live',
+  paper: 'Paper',
+};
+
+const deepDiveHref = `/projects/${project.id}`;
+---
+
+<article
+  class:list={[
+    'group relative flex h-full flex-col rounded-2xl border bg-white p-6 transition-all hover:-translate-y-1 hover:shadow-xl dark:bg-slate-900',
+    data.featured
+      ? 'border-accent-300 dark:border-accent-500/40'
+      : 'border-slate-200 dark:border-slate-800',
+  ]}
+>
+  <div class="flex items-start justify-between gap-3">
+    <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+      <a href={deepDiveHref} class="after:absolute after:inset-0 focus-visible:outline-none">
+        <span
+          class="bg-gradient-to-r from-accent-500 to-brand-600 bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 group-hover:bg-[length:100%_2px]"
+        >
+          {data.title}
+        </span>
+      </a>
+    </h3>
+    {
+      data.featured && (
+        <span
+          class="inline-flex flex-none items-center rounded-full bg-gradient-to-r from-accent-500 to-brand-600 px-2.5 py-0.5 text-xs font-semibold text-white"
+          title="Featured project"
+        >
+          Featured
+        </span>
+      )
+    }
+  </div>
+
+  {
+    data.year && (
+      <p class="mt-1 text-xs font-medium text-slate-400 dark:text-slate-500">
+        {data.year}
+      </p>
+    )
+  }
+
+  <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+    {data.description}
+  </p>
+
+  <ul class="mt-4 flex flex-wrap gap-2">
+    {data.tech.map((t) => <li><Badge>{t}</Badge></li>)}
+  </ul>
+
+  <div
+    class="relative z-10 mt-5 flex flex-wrap items-center gap-4 border-t border-slate-100 pt-4 dark:border-slate-800"
+  >
+    <a
+      href={deepDiveHref}
+      class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 transition-colors hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+    >
+      Read the deep dive
+      <svg
+        class="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M5 12h14M13 6l6 6-6 6"></path>
+      </svg>
+    </a>
+    {
+      linkEntries.map(([kind, url]) => (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 transition-colors hover:text-accent-600 dark:text-slate-400 dark:hover:text-accent-300"
+        >
+          <svg
+            class="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <path d="M15 3h6v6M10 14 21 3" />
+          </svg>
+          {linkLabels[kind] ?? kind}
+        </a>
+      ))
+    }
+  </div>
+</article>
