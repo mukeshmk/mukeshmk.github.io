@@ -1,0 +1,70 @@
+{
+  "name": "Mukesh Arambakam",
+  "role": "Staff AI/ML Engineer",
+  "company": "Genesys",
+  "url": "https://mukeshmk.github.io",
+  "location": "Dublin, Ireland",
+  "email": "amukesh.mk@gmail.com",
+  "phone": "+353 89 4960 450",
+  "description": "Mukesh Arambakam is a Staff AI/ML Engineer at Genesys in Dublin, building next-generation AI agents and LLM-powered applications across GenAI, RAG, and scalable ML infrastructure.",
+  "ogImage": "/assets/og-image.png",
+  "resume": "/assets/mukesh-arambakam-resume.pdf",
+  "availability": "Available for interesting problems",
+  "tagline": "I'm a Staff AI/ML Engineer at Genesys, architecting next-generation AI agents and LLM-powered applications. With 7+ years in software and 5+ years focused on NLP, machine translation, and generative AI - backed by a Master's in Data Science.",
+  "bio": [
+    "I design and deliver end-to-end machine learning systems - from data preprocessing and model training through evaluation, optimization, and production deployment. My recent work centers on generative AI: fine-tuning LLMs with PEFT methods, building agentic AI systems, and shipping scalable, production-ready applications.",
+    "Earlier in my career I spent five years deep in natural language processing and neural machine translation, building evaluation frameworks and language tooling that operated across 190+ languages. That mix of research depth and engineering pragmatism is what I bring to hard AI problems today."
+  ],
+  "beyondWork": "Outside of engineering you'll find me reading, playing basketball, and keeping up with the relentless pace of AI research.",
+  "coreSkills": [
+    "LLMs",
+    "Generative AI",
+    "RAG",
+    "AI Agents",
+    "LangGraph",
+    "PyTorch",
+    "Python",
+    "FastAPI"
+  ],
+  "focus": [
+    {
+      "title": "LLMs & GenAI",
+      "body": "Fine-tuning, prompting, and productionizing large language models for real workloads."
+    },
+    {
+      "title": "AI Agents & RAG",
+      "body": "Orchestrating multi-step agentic systems and retrieval pipelines with LangGraph and MCP."
+    },
+    {
+      "title": "ML Infrastructure",
+      "body": "Scalable, efficient serving - quantization, ONNX, and clean FastAPI system design."
+    }
+  ],
+  "honors": [
+    "Certificate of Appreciation - Oracle (2019)",
+    "Silver Medal - 16th National Jamboree",
+    "Rajya Puraskar Award"
+  ],
+  "socials": [
+    {
+      "key": "github",
+      "label": "GitHub",
+      "href": "https://github.com/mukeshmk"
+    },
+    {
+      "key": "linkedin",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/mukeshmk95"
+    },
+    {
+      "key": "x",
+      "label": "X",
+      "href": "https://x.com/amukeshmk"
+    },
+    {
+      "key": "email",
+      "label": "Email",
+      "href": "mailto:amukesh.mk@gmail.com"
+    }
+  ]
+}

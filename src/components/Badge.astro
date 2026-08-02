@@ -1,0 +1,21 @@
+---
+interface Props {
+  /** Visual emphasis. `accent` uses the brand gradient tint. */
+  variant?: 'default' | 'accent';
+  class?: string;
+}
+const { variant = 'default', class: className = '' } = Astro.props;
+
+const styles = {
+  default:
+    'border-slate-200 bg-slate-100 text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300',
+  accent:
+    'border-accent-200 bg-accent-50 text-accent-700 dark:border-accent-500/30 dark:bg-accent-500/10 dark:text-accent-300',
+};
+---
+
+<span
+  class={`inline-flex items-center rounded-full border px-3 py-1 text-sm font-medium ${styles[variant]} ${className}`}
+>
+  <slot />
+</span>

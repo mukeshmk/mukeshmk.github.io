@@ -1,0 +1,118 @@
+---
+import { Image } from 'astro:assets';
+import profilePhoto from '../../assets/profile-photo.jpg';
+import Badge from '../Badge.astro';
+import { site, profile } from '../../data/site';
+
+const coreSkills = profile.coreSkills;
+---
+
+<section
+  id="top"
+  class="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28"
+  aria-labelledby="hero-heading"
+>
+  <!-- Decorative gradient glow (non-interactive). -->
+  <div
+    class="pointer-events-none absolute inset-0 -z-10"
+    aria-hidden="true"
+  >
+    <div
+      class="absolute -top-24 left-1/2 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-gradient-to-r from-accent-400/20 to-brand-500/20 blur-3xl dark:from-accent-500/15 dark:to-brand-600/15"
+    >
+    </div>
+  </div>
+
+  <div
+    class="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-[1.4fr_1fr]"
+  >
+    <div class="text-center lg:text-left">
+      <p
+        class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/60 px-4 py-1.5 text-sm font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-800/60 dark:text-slate-300"
+      >
+        <span class="relative flex h-2 w-2">
+          <span
+            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75"
+          ></span>
+          <span
+            class="relative inline-flex h-2 w-2 rounded-full bg-accent-500"
+          ></span>
+        </span>
+        {profile.availability}
+      </p>
+
+      <h1
+        id="hero-heading"
+        class="mt-6 text-4xl font-black tracking-tight text-slate-900 sm:text-6xl dark:text-white"
+      >
+        Hi, I'm Mukesh -<br />
+        <span class="text-gradient">{site.role}</span>
+      </h1>
+
+      <p
+        class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 lg:mx-0 dark:text-slate-400"
+      >
+        {profile.tagline}
+      </p>
+
+      <div
+        class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start"
+      >
+        <a
+          href="/#contact"
+          class="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-accent-500 to-brand-600 px-6 py-3 font-semibold text-white shadow-lg shadow-accent-500/20 transition-transform hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-500"
+        >
+          Get in touch
+        </a>
+        <a
+          href={site.resume}
+          download
+          class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition-colors hover:border-accent-500 hover:text-accent-600 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:border-accent-400 dark:hover:text-accent-300"
+        >
+          <svg
+            class="h-4 w-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"></path>
+          </svg>
+          Download CV
+        </a>
+      </div>
+
+      <ul
+        class="mt-10 flex flex-wrap justify-center gap-2 lg:justify-start"
+        aria-label="Core technologies"
+      >
+        {coreSkills.map((skill) => (
+          <li><Badge variant="accent">{skill}</Badge></li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="mx-auto w-full max-w-xs sm:max-w-sm">
+      <div class="relative">
+        <div
+          class="absolute -inset-3 -z-10 rounded-3xl bg-gradient-to-tr from-accent-500/30 to-brand-600/30 blur-2xl"
+          aria-hidden="true"
+        >
+        </div>
+        <Image
+          src={profilePhoto}
+          alt="Mukesh Arambakam"
+          width={480}
+          height={480}
+          widths={[240, 360, 480]}
+          sizes="(min-width: 1024px) 24rem, (min-width: 640px) 20rem, 16rem"
+          loading="eager"
+          class="aspect-square w-full rounded-3xl border border-slate-200 object-cover shadow-2xl dark:border-slate-700"
+        />
+      </div>
+    </div>
+  </div>
+</section>

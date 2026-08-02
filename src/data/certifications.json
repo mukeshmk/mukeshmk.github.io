@@ -1,0 +1,27 @@
+[
+  {
+    "id": "oci-foundations-associate",
+    "order": 1,
+    "name": "OCI Foundations Associate",
+    "issuer": "Oracle",
+    "year": "2023",
+    "link": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=207E43E63B48C395836FE0FFF334C368401B8C1B941A0B7F7F56D09A226D2FF0",
+    "file": "/assets/certificates/oci-foundations-associate.pdf"
+  },
+  {
+    "id": "oci-ai-foundations-associate",
+    "order": 2,
+    "name": "OCI AI Foundations Associate",
+    "issuer": "Oracle",
+    "link": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=981AFFE2555D3FBEA6B87D05DC9468018D9D311E3E3660BF7C0EE53A3E6B5A1F",
+    "file": "/assets/certificates/oci-ai-foundations-associate.pdf"
+  },
+  {
+    "id": "oci-generative-ai-professional",
+    "order": 3,
+    "name": "OCI Certified Generative AI Professional",
+    "issuer": "Oracle",
+    "link": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=2A1795CA3AEA4AD1C7CEA94C1C6A0E4B2850710FB4DCB9859A769B74E454BCD6",
+    "file": "/assets/certificates/oci-generative-ai-professional.pdf"
+  }
+]

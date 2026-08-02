@@ -1,0 +1,63 @@
+[
+  {
+    "id": "genesys-staff-ai-ml",
+    "order": 1,
+    "title": "Staff AI/ML Engineer",
+    "company": "Genesys",
+    "location": "Dublin, Ireland",
+    "period": "2024 - Present",
+    "current": true,
+    "summary": "R&D / Data Science Group. Architecting next-generation AI agents and LLM-powered applications.",
+    "highlights": [
+      "Designing and building AI agent orchestration and LLM-powered product features.",
+      "Focus on GenAI, retrieval-augmented generation (RAG), and scalable ML infrastructure."
+    ]
+  },
+  {
+    "id": "oracle-senior-ml",
+    "order": 2,
+    "title": "Senior Machine Learning Developer",
+    "company": "Oracle",
+    "location": "Dublin, Ireland",
+    "period": "Nov 2020 - 2024",
+    "summary": "Neural machine translation, LLM fine-tuning, agentic systems, and evaluation frameworks.",
+    "highlights": [
+      "Built an agentic AI system with LangGraph supporting 10k+ LLM calls to Translation and language-detection MCP servers.",
+      "Implemented RAG pipelines with vector databases for domain-specific extraction and translation enhancement.",
+      "Fine-tuned translation models with PEFT (LoRA/QLoRA), cutting production resource usage by ~40%.",
+      "Expanded the evaluation framework with COMET, xCOMET, BERTScore, and LLM-as-a-Judge assessment.",
+      "Grew language-detection coverage from 45 to 192 languages with a 3-stage hierarchical architecture.",
+      "Refactored services around FastAPI and clean system-design patterns for a ~3x performance boost.",
+      "Packaged and published ONNX models with architecture-aware quantization, halving memory footprint."
+    ]
+  },
+  {
+    "id": "oracle-applications-engineer",
+    "order": 3,
+    "title": "Applications Engineer",
+    "company": "Oracle",
+    "location": "Bangalore, India",
+    "period": "Jun 2019 - Aug 2019",
+    "summary": "Cross-platform application development across globally distributed teams.",
+    "highlights": [
+      "Led an overhaul of the product security flow and shipped two new features.",
+      "Implemented a micro-service for cross-tenant communication in a multi-tenant architecture.",
+      "Mentored 10 junior engineers on the product internals and tooling."
+    ]
+  },
+  {
+    "id": "oracle-applications-developer",
+    "order": 4,
+    "title": "Applications Developer",
+    "company": "Oracle",
+    "location": "Bangalore, India",
+    "period": "Jul 2017 - May 2019",
+    "summary": "Core product feature development with a focus on performance optimization.",
+    "highlights": [
+      "Delivered three core product features alongside the team.",
+      "Optimized an internal filter framework with dynamic SQL for a ~30% speedup.",
+      "Improved search framework performance by ~20% via query optimization.",
+      "Received a Certificate of Appreciation for outstanding contribution to the product."
+    ]
+  }
+]

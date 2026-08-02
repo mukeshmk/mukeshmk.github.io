@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import PostCard from '../../components/PostCard.astro';
+import Badge from '../../components/Badge.astro';
+
+// Drafts are excluded from production builds, shown in dev.
+const posts = (await getCollection('blog', ({ data }) => import.meta.env.DEV || !data.draft))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].sort();
+---
+
+<BaseLayout
+  title="Blog"
+  description="Notes on machine learning, LLMs, GenAI, and software engineering by Mukesh Arambakam."
+>
+  <section class="mx-auto max-w-6xl px-6 pt-32 pb-20">
+    <SectionHeading eyebrow="Writing" title="Blog" />
+    <p class="-mt-4 mb-10 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+      Notes on LLMs, AI agents, machine learning, and the craft of shipping ML
+      systems.
+    </p>
+
+    {
+      allTags.length > 0 && (
+        <ul class="mb-10 flex flex-wrap gap-2" aria-label="Tags">
+          {allTags.map((tag) => (
+            <li><Badge variant="accent">{tag}</Badge></li>
+          ))}
+        </ul>
+      )
+    }
+
+    {
+      posts.length === 0 ? (
+        <p class="text-slate-500 dark:text-slate-400">
+          No posts yet - check back soon.
+        </p>
+      ) : (
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => (
+            <PostCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date}
+              tags={post.data.tags}
+              href={`/blog/${post.id}`}
+            />
+          ))}
+        </div>
+      )
+    }
+  </section>
+</BaseLayout>

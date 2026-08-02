@@ -1,0 +1,20 @@
+[
+  {
+    "id": "msc-data-science-tcd",
+    "order": 1,
+    "degree": "MSc in Data Science",
+    "school": "Trinity College Dublin",
+    "location": "Dublin, Ireland",
+    "period": "2019 - 2020",
+    "detail": "Specialization in machine learning and artificial intelligence."
+  },
+  {
+    "id": "btech-cse-amrita",
+    "order": 2,
+    "degree": "B.Tech in Computer Science & Engineering",
+    "school": "Amrita School of Engineering",
+    "location": "Coimbatore, India",
+    "period": "2013 - 2017",
+    "detail": "Foundations in data structures, algorithms, and systems."
+  }
+]
