@@ -1,0 +1,103 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Badge from '../../components/Badge.astro';
+import { site } from '../../data/site';
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection(
+    'blog',
+    ({ data }) => import.meta.env.DEV || !data.draft
+  );
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateStr = post.data.date.toLocaleDateString('en-IE', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+const isoDate = post.data.date.toISOString();
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: isoDate,
+  dateModified: isoDate,
+  keywords: post.data.tags.join(', '),
+  author: { '@type': 'Person', name: site.name, url: site.url },
+  publisher: { '@type': 'Person', name: site.name },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': new URL(`/blog/${post.id}`, site.url).href,
+  },
+};
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  article={true}
+  jsonLd={jsonLd}
+  noindex={post.data.draft}
+>
+  <article class="mx-auto max-w-3xl px-6 pt-32 pb-20">
+    <a
+      href="/blog"
+      class="inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 transition-colors hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+    >
+      <svg
+        class="h-4 w-4"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m15 18-6-6 6-6"></path>
+      </svg>
+      Back to blog
+    </a>
+
+    <header class="mt-6">
+      {
+        post.data.draft && (
+          <p class="mb-3 inline-block rounded-md bg-amber-100 px-2 py-1 text-xs font-bold uppercase tracking-wide text-amber-800 dark:bg-amber-500/15 dark:text-amber-300">
+            Draft
+          </p>
+        )
+      }
+      <time
+        datetime={isoDate}
+        class="text-sm font-medium text-slate-400 dark:text-slate-500"
+      >
+        {dateStr}
+      </time>
+      <h1
+        class="mt-2 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl dark:text-white"
+      >
+        {post.data.title}
+      </h1>
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {post.data.tags.map((tag) => <li><Badge variant="accent">{tag}</Badge></li>)}
+      </ul>
+    </header>
+
+    <div
+      class="prose prose-slate mt-10 max-w-none dark:prose-invert prose-headings:font-bold prose-a:text-accent-600 prose-a:no-underline hover:prose-a:underline dark:prose-a:text-accent-400 prose-pre:border prose-pre:border-slate-200 dark:prose-pre:border-slate-800"
+    >
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
